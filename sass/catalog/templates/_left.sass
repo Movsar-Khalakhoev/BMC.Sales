@@ -1,0 +1,78 @@
+.catalog
+	&__header
+		font-family: $dregular
+		color: $dark
+		font-size: 24px
+		text-align: center
+		&-icon
+			width: 28px
+			height: 28px
+			transform: rotate(-90deg)
+			fill: $white
+			margin-left: 10px
+			// display: none
+		&-box
+			width: 270px
+			height: 40px
+			display: flex
+			align-items: center
+			justify-content: flex-start
+			margin-top: 10px
+			margin-bottom: 15px
+	&__left
+		display: flex
+		flex-direction: column
+		width: 320px
+		padding-top: 30px
+		transition: $transition
+		border-top: 1px solid $secondary
+		border-bottom: 1px solid $secondary
+		&-close
+			display: none
+		&-active
+			// left: 5% !important
+			transform: translateX(0) !important
+		&-button
+			&--1, &--2
+				display: flex
+				align-items: center
+				width: 320px
+				height: 60px
+				border-radius: 5px
+				padding-left: 19px
+				margin-bottom: 10px
+				color: $dark
+				background-color: $bgsecondary
+				text-decoration: none
+				font-family: $dmedium
+				font-size: 16px
+				border-bottom: 1px solid darken($bgsecondary, 10%)
+				border-left: 1px solid darken($bgsecondary, 10%)
+				transition: $transition
+				&-icon
+					width: 19px
+					margin-right: 24px
+					fill: $secondary
+					&-active
+						fill: $white
+				&:hover
+					background-color: $primary
+					color: $white
+			&--2
+				margin-bottom: 18px
+				&-icon
+					width: 24px
+					transform: rotate(90deg)
+		&-list
+			list-style: none
+		&-li
+			text-decoration: none
+			color: $dark
+			font-family: $dmedium
+			font-size: 16px
+			line-height: 36px
+
+			transition: $transition
+			&:hover
+				color: $primary
+				text-decoration: underline

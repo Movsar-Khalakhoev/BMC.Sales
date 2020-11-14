@@ -1,0 +1,181 @@
+.modal
+	visibility: hidden
+	display: flex
+	align-items: center
+	justify-content: center
+	position: fixed
+	z-index: 199000
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	width: 100%
+	height: 100%
+	background-color: rgba($dark, 0.6)
+	&__close-block
+		position: absolute
+		width: 100%
+		height: 100%
+		z-index: 200
+	&--visible
+		opacity: 1
+		visibility: visible !important
+	&__dialog
+		visibility: hidden
+		position: relative
+		z-index: 299
+		max-width: 36.36rem
+		background-color: $bgsecondary
+		padding: 30px
+		color: $white
+		&-success
+			display: none
+			justify-content: center
+			align-items: center
+			flex-direction: column
+			width: 100%
+			height: 400px
+			&-active
+				display: flex !important
+			&-text
+				color: $dark
+				font-family: $dmedium
+				font-size: 26px
+				width: 400px
+				padding: 30px	50px
+		&-check
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 200px
+			height: 200px
+			border-radius: 50%
+			background-color: #66CC66
+			&-icon
+				width: 170px
+				height: 170px 
+		&-box
+			&-active
+				display: none
+	&__close
+		position: absolute
+		right: 0
+		top: 0
+		width: 28px
+		height: 28px
+		background: transparent
+		border: none
+		margin: 12px
+		cursor: pointer
+		&-icon
+			width: 20px
+	&__title
+		font-family: $dmedium
+		font-size: 24px
+		text-align: center
+		margin: 0
+		margin-bottom: 2.43rem
+		color: $dark
+	&__form
+		display: flex
+		flex-direction: column
+	&__input
+		height: 50px
+		width: 350px
+		color: $dark
+		font-family: $dregular
+		font-size: 20px
+		padding-left: 10px
+		&-group
+			position: relative
+			display: flex
+			flex-direction: column
+			margin-bottom: 3rem
+			&--last
+				margin-bottom: 0
+	&__policy
+		margin-top: 35px
+		margin-bottom: 50px
+	&__button
+		height: 60px
+		font-size: 18px
+		font-family: $dmedium
+		background-color: transparent
+		border: 2px solid $dark
+		color: $dark
+		transition: $transition
+		&:hover
+			background-color: $dark
+			color: $white
+	&__form-success
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 20px
+		&-check
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 70px
+			height: 70px
+			border-radius: 50%
+			border: 2px solid $primary
+			&-image
+				margin-top: 9px
+				width: 70%
+		&-text
+			font-size: 1.56rem
+	&__vk
+		&-text
+			text-align: center
+			font-size: 1.6rem
+			margin-bottom: 5px
+			margin-top: 45px
+		&-link
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 300px
+			height: 50px
+			margin: auto
+			text-decoration: none
+			font-weight: bold
+			background-color: $primary
+			color: $white
+			font-size: 2.5rem
+
+.policy
+	position: relative
+	&__checkbox
+		opacity: 0
+		visibility: hidden
+		&:checked ~
+			.policy__label
+				&::before
+					background: $dark url('../../img/check.svg') no-repeat center / 0.8rem
+	&__label
+		display: flex
+		align-items: center
+		font-size: 1.142rem
+		color: $dark
+		font-family: $dregular
+		font-size: 16px
+		&-span
+			color: $primary
+		&::before
+			content: ''
+			width: 20px
+			height: 20px
+			border: 2px solid $dark
+			border-radius: 50%
+			cursor: pointer
+			margin-right: 0.64rem
+		&--center
+			justify-content: center
+
+div
+	&.invalid
+		color: tomato
+		position: absolute
+		bottom: -20px
+		font-family: $dregular

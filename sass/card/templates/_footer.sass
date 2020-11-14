@@ -1,0 +1,218 @@
+.footer
+	background-color: $bgsecondary
+	padding-top: 60px
+	&__container
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		padding-bottom: 10px
+	&__left
+		display: flex
+		justify-content: flex-start
+		align-items: flex-start
+		max-width: 885px
+	&__column--1
+		width: 280px
+		color: $dark
+		&-text
+			&--1
+				width: 207px
+				font-family: $dregular
+				font-size: 18px
+				letter-spacing: 0.18px
+				&-span
+					font-family: $dbold
+			&--2
+				font-size: 14px
+				font-family: $dregular
+				letter-spacing: 0.14px
+				margin-top: 24px
+		&-social
+			display: flex
+			width: 104px
+			justify-content: space-between
+			align-items: center
+			margin-top: 34px
+		&-link
+			display: flex
+			justify-content: center
+			align-items: center
+			padding: 5px
+			background-color: $bgsecondary
+			border-radius: 50%
+			transition: $transition
+			border: 1px solid $bgsecondary
+			&-icon
+				height: 13px
+				width: 13px
+				fill: $secondary
+				transition: $transition
+				&:hover
+					fill: $dark
+			&:hover
+				border: 1px solid $secondary
+				background-color: darken($bgsecondary, 10%)
+	&__column--2
+		width: 210px
+		margin-left: 71px
+		&-text
+			font-family: $dregular
+			font-size: 18px
+			color: $dark
+			letter-spacing: 0.18px
+		&-appstore, &-playmarket
+			width: 175px
+			height: 60px
+			border-radius: 5px
+			background-color: black
+			display: flex
+			justify-content: space-between
+			align-items: center
+			border: none
+			margin-top: 28px
+			cursor: pointer
+		&-playmarket
+			margin-top: 10px
+		&-apple
+			height: 45px
+			margin-left: 13px
+		&-play
+			height: 35px
+			margin-left: 11px
+			margin-top: 5px
+				
+		&-apple
+			&-text
+				font-family: $dregular
+				font-size: 14px
+				color: #fff
+				text-align: left
+				margin-left: 9px
+				line-height: 19px
+			&-span
+				font-size: 21px
+				margin-left: 3px
+				letter-spacing: 1.2px
+		&-play
+			&-text
+				font-family: $dregular
+				font-size: 14px
+				color: #fff
+				text-align: left
+				margin-left: 13px
+				line-height: 20px
+				margin-bottom: 4px
+			&-span
+				font-size: 25px
+				margin-left: -15px
+				letter-spacing: -0.95px
+		&-link
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 175px
+			height: 45px
+			text-decoration: none
+			border: 2px solid $dark
+			color: $dark
+			margin-top: 30px
+			margin-bottom: 50px
+			font-family: $dmedium
+			font-size: 14px
+			transition: $transition
+			&-arrow
+				width: 7px
+				margin-left: 15px
+				margin-top: 3px
+				transition: $transition
+				transform: rotate(-90deg)
+				&-active
+					fill: $white
+			&:hover
+				color: $white
+				background-color: $dark
+	&__column--3
+		margin-left: 137px
+		&-list
+			margin-top: -8px	
+		&-li
+			list-style: none
+			font-family: $dmedium
+			font-size: 12px
+			line-height: 34px
+			text-transform: uppercase
+			&-link
+				transition: $transition
+				text-decoration: none
+				color: $secondary
+				&:hover
+					color: $dark
+	&__right
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		&-phone
+			font-family: $dregular
+			font-size: 24px
+			letter-spacing: 0.24px
+			margin-right: 3px
+			margin-top: 28px
+			color: $dark
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+		&-label
+			font-family: $dregular
+			font-size: 16px
+			letter-spacing: 0.16px
+			color: $secondary
+			margin-right: 4px
+			margin-top: 7px
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+		&-payment
+			margin-top: 79px
+			margin-right: 3px
+	&__logo
+		display: flex
+		justify-content: space-between
+		align-items: center
+		text-decoration: none
+		margin-top: 3px
+		&-text
+			display: flex
+			flex-direction: column
+			justify-content: space-around
+			margin-left: 15px
+			&--1
+				text-transform: uppercase
+				font-size: 24px
+				font-family: $dmedium
+				color: $dark
+				letter-spacing: 2.16px
+			&--2
+				color: $dark
+				font-size: 12px
+				font-family: $dmedium
+	&__down
+		background-color: $dark
+		width: 100%
+		height: 60px
+		&-container
+			display: flex
+			justify-content: space-between
+			padding-top: 20px
+			align-items: center
+		&-error
+			font-family: $dregular
+			color: $secondary
+			font-size: 14px
+			transition: $transition
+			&:hover
+				color: $bgsecondary
+	&__copyright
+		font-family: $dregular
+		font-size: 14px
+		color: $secondary
+

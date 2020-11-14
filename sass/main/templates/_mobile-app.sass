@@ -1,0 +1,44 @@
+.mobile-app
+	display: flex
+	align-items: center
+	height: 471px
+	padding-bottom: 10px
+	margin-bottom: 100px
+	background: url('../../img/main/mobile-app/app.jpg') no-repeat center
+	background-size: auto 100%
+	&__header
+		color: $white
+		font-family: $dbold
+		font-size: 72px
+		text-transform: uppercase
+		line-height: 84px
+	&__description
+		color: $white
+		font-family: $dregular
+		font-size: 30px
+		// letter-spacing: 1.5px
+		margin-top: 10px
+	&__button
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 190px
+		height: 52px
+		border: 2px solid $white
+		color: $white
+		font-family: $dmedium
+		font-size: 18px
+		margin-top: 40px
+		text-decoration: none
+		transition: $transition
+		padding-bottom: 2px
+		&-icon
+			height: 10px
+			width: 10px
+			fill: $white
+			margin-left: 14px
+			margin-top: 3px
+			transform: rotate(-90deg)
+		&:hover
+			background-color: $dark
+			border-color: $dark

@@ -1,0 +1,127 @@
+.action-time
+	&__container
+		position: relative
+	&__header
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 40%
+		border-right: 2px solid darken($bgsecondary, 20%)
+		border-left: 2px solid darken($bgsecondary, 20%)
+		margin: auto
+		text-align: center
+		height: 30px
+		margin-bottom: 39px
+		&::before
+			content: ''
+			position: absolute
+			height: 2px
+			width: 30%
+			background-color: $dark
+			left: 0
+			background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0)), to(darken($bgsecondary, 20%)))
+  	 	-webkit-background-clip: text
+  	  -webkit-text-fill-color: transparent
+		&::after
+			content: ''
+			position: absolute
+			height: 2px
+			width: 30%
+			background-color: $dark
+			right: 0
+			background: -webkit-gradient(linear, right top, left bottom, from(rgba(0, 0, 0, 0)), to(darken($bgsecondary, 20%)))
+  	 	-webkit-background-clip: text
+  	  -webkit-text-fill-color: transparent
+		&-text
+			font-family: $dlight
+			font-size: 36px
+			color: $dark
+	&__row
+		display: flex
+		justify-content: space-around
+		align-items: center
+		width: 97.5%
+		margin: auto
+		margin-top: 45px
+		margin-bottom: 106px
+	&__circle
+		position: relative
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		width: 197px
+		height: 197px
+		border-radius: 50%
+		border: 5px solid $primary
+		&::after
+			content: ''
+			position: absolute
+			width: 207px
+			height: 207px
+			border-radius: 50%
+			border: 2px dashed $secondary
+		&-name
+			color: $dark
+			font-family: $dlight
+			font-size: 30px
+			margin-bottom: -10px
+		&-numb
+			color: $primary
+			font-family: $dbold
+			font-size: 72px
+	&__cross
+		display: flex
+		justify-content: center
+		align-items: center
+		position: relative
+		width: 8px
+		height: 8px
+		background-color: $secondary
+		border-radius: 50%
+		&::after, &::before
+			position: absolute
+			content: ''
+			height: 1px
+			width: 70px
+			background-color: $secondary
+			transform: rotate(45deg)
+		&::before
+			transform: rotate(-45deg)
+
+// body
+//   text-align: center
+//   background: #00ecb9
+//   font-family: sans-serif
+//   font-weight: 100
+ 
+// .countdown-title 
+//   color: #396
+//   font-weight: 100
+//   font-size: 40px
+//   margin: 40px 0px 20px
+ 
+// .countdown 
+//   font-family: sans-serif
+//   color: #fff
+//   display: inline-block
+//   font-weight: 100
+//   text-align: center
+//   font-size: 30px
+
+// .countdown-number
+//   padding: 10px
+//   border-radius: 3px
+//   background: #00bf96
+//   display: inline-block
+ 
+// .countdown-time
+//   padding: 15px
+//   border-radius: 3px
+//   background: #00816a
+//   display: inline-block
+ 
+// .countdown-text 
+//   display: block
+//   padding-top: 5px
+//   font-size: 16px

@@ -1,0 +1,385 @@
+@media screen and ( max-width: 1368px )
+	.container
+		width: 90%
+@media screen and ( max-width: 1264px )
+	.main-section
+		&__navbar
+			width: 600px
+		&__like
+			margin-left: 10px
+			width: 50px
+			&::before, &::after
+				width: 25px
+		&__bag
+			width: 50px
+		&__left
+			&-text
+				margin-left: 5px
+				&--1
+					font-size: 20px
+				&--2
+					font-size: 10px
+		&__logo-image
+			height: 40px
+	//Верхняя нефиксированная навигационная панель
+	//
+	.catalog
+		&__right
+			padding: 0 20px
+		&__card
+			width: 47%
+			margin-bottom: 40px
+	// Каталог товаров
+	//
+	.services
+		&__header
+			width: 36%
+			&::after, &::before
+				width: 32%
+		&__card
+			width: 24.5%
+			&-name
+				font-size: 16px
+	//Сервисы платформы
+	//
+	.footer
+		&__column
+			&--2
+				margin-left: 20px
+			&--3
+				margin-left: 30px
+	//Футер
+@media screen and ( max-width: 1100px )
+	//
+	.services
+		&__header
+			width: 40%
+			&::before, &::after
+				width: 30%
+			&-text
+				font-size: 36px
+		&__row
+			justify-content: space-around
+		&__card
+			width: 34%
+			margin-bottom: 30px
+			&-name
+				font-size: 20px
+	//Сервисы платформы
+	//
+	.footer
+		&__column
+			&--1
+				width: 250px
+			&--2
+				display: none
+			&--3
+				margin-left: 20px
+	//Футер
+@media screen and ( max-width: 992px )
+	.top-header
+		&__navbar
+			position: absolute
+			right: 0
+			top: 0
+			padding-left: 0
+			padding-top: 70px
+			width: 0
+			background-color: $dark
+			flex-direction: column
+			align-items: flex-start
+			justify-content: flex-start
+			height: 100vh
+			transition: $transition width
+		&__nav-item
+			opacity: 0
+			transition: $transition2
+			margin-bottom: 10px
+		&__text
+			font-size: 20px
+			&:hover ~
+				.top-header__icon
+					fill: $secondary
+			&--access
+				font-size: 14px
+				&:hover
+					color: $secondary !important
+			&:hover
+				color: $bgsecondary
+		&__burger
+			display: block
+			right: 10px
+		&__container
+			position: static
+		&__lines
+			display: none
+		&__icon
+			display: none
+			&-right
+				display: block
+		&__left
+			position: static
+			width: 150px
+		&__right
+			position: absolute
+			right: 0
+			z-index: 200
+			margin-right: 50px
+	// Верхняя фиксированная навигационная панель
+	// 
+	.main-section
+		&__navbar
+			display: none
+	// Верхняя нефиксированная навигационная панель
+	//
+	.main-section
+		&__sort
+			&-new
+				width: 202px
+	//Сортировка
+	//
+	.catalog
+		&__header
+			color: $white
+			padding-bottom: 7px
+			&-box
+				position: absolute
+				transform: rotate(90deg)
+				left: -120px
+				top: 426px
+				background-color: $primary
+				border-top-left-radius: 5px 
+				border-top-right-radius: 5px
+				padding: 0 10px
+		&__left
+			width: 350px
+			background-color: $dark
+			position: absolute
+			z-index: 1000
+			left: 0
+			min-height: 100vh	
+			padding-left: 15px
+			padding-top: 50px
+			transform: translateX(-350px)
+			&-close
+				top: 23px
+				right: 11px
+				position: absolute
+				display: block
+				height: 3px
+				width: 30px
+				background-color: $white
+				transform: rotate(-45deg)
+				&::after
+					position: absolute
+					background-color: $white
+					content: ''
+					height: 3px
+					width: 30px
+					transform: rotate(90deg)
+			&-li
+				color: $white
+		&__right
+			width: 100%
+			margin-top: 40px
+		&__card
+			width: 46%
+			margin-bottom: 40px
+	//Левая сторона - каталог товаров
+	//
+	.services
+		&__header
+			width: 50%
+			&::before, &::after
+				width: 25%
+			&-text
+				font-size: 36px
+		&__row
+			justify-content: space-around
+		&__card
+			width: 44%
+			margin-bottom: 30px
+			&-name
+				font-size: 20px
+	//Сервисы платформы
+	//
+	.footer
+		&__down
+			height: 40px
+			&-container
+				padding-top: 12px
+			&-error
+				font-size: 12px
+		&__copyright
+			font-size: 12px
+@media screen and ( max-width: 768px )
+	//
+	.main-section
+		&__sort
+			justify-content: center
+			margin-top: 15px
+	//Сортировка
+	//
+	.catalog
+		&__right
+			padding: 0
+		&__header-box
+			top: 464px
+		&__card
+			width: 49%
+			margin-bottom: 40px
+	//Левая сторона - каталог товаров
+	//
+	.services
+		&__header
+			width: 70%
+			&::before, &::after
+				width: 15%
+			&-text
+				font-size: 38px
+		&__row
+			justify-content: space-between
+		&__card
+			width: 60%
+			margin-bottom: 40px !important
+			margin: auto
+			&-name
+				font-size: 17px
+		&__pagination
+			margin-top: 25px
+	//Сервисы платформы
+	//
+	.footer
+		padding-top: 20px
+		&__column
+			&--1
+				width: 250px
+			&--2
+				display: none
+			&--3
+				display: none
+	//Футер
+@media screen and ( max-width: 570px )
+	//
+	.main-section
+		&__sort
+			flex-direction: column
+			&-new
+				width: 100%
+				margin-right: 0
+			&-page
+				width: 100%
+				margin-top: 15px
+	//Сортировка
+	//
+	.catalog
+		&__right
+			justify-content: center
+			&-pages
+				&-buttons
+					width: 300px
+				&-button
+					&--3, &--4
+						display: none
+		&__header-box
+			top: 514px
+		&__card
+			width: 80%
+			margin-bottom: 40px
+	//Левая сторона - каталог товаров
+	//
+	.services
+		&__header
+			width: 83%
+			&::before, &::after
+				width: 8.5%
+			&-text
+				font-size: 33px
+		&__row
+			justify-content: space-between
+		&__card
+			width: 80%
+			margin-bottom: 40px !important
+			margin: auto
+			&-name
+				font-size: 18px
+		&__pagination
+			margin-top: 15px
+	//Сервисы платформы
+	//
+	.footer
+		padding-top: 10px
+		&__column
+			&--1
+				display: none
+			&--2
+				display: none
+			&--3
+				display: none
+		&__right
+			margin: auto
+			&-phone
+				margin-top: 10px
+			&-payment
+				margin-top: 30px
+		&__down
+			&-error
+				display: none
+	//Футер
+	//
+	.modal
+		&__dialog
+			padding: 10px
+			&-success
+				height: 350px
+				&-text
+					width: 300px
+					padding: 20px 0 0 0
+					margin: 0 auto
+			&-box
+				width: 350px
+		&__input
+			margin: auto
+			width: 320px
+			&-group
+				margin-bottom: 30px
+		&__policy
+			margin-left: 15px
+			margin-top: 0
+			margin-bottom: 15px
+@media screen and ( max-width: 420px )
+	//
+	.catalog
+		&__card
+			width: 100%
+			margin-bottom: 40px
+		&__right
+			&-pages
+				&-text
+					&--3, &--4, &--5, &--6
+						display: none
+	// Каталог товаров
+	//
+	.services
+		&__header
+			width: 80%
+			&::before, &::after
+				width: 10%
+			&-text
+				font-size: 25px
+		&__row
+			justify-content: space-between
+		&__card
+			width: 100%
+			margin-bottom: 40px !important
+			margin: auto
+			&-name
+				font-size: 18px
+	//Сервисы платформы
+	//
+	.footer
+		&__down
+			&-container
+				padding-top: 6px
+		&__copyright
+			line-height: 15px

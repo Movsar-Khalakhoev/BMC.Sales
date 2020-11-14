@@ -1,0 +1,205 @@
+.main-section
+	&__top-panel
+		height: 85px
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__left
+		display: flex
+		justify-content: space-between
+		align-items: center
+		text-decoration: none
+		&-text
+			display: flex
+			flex-direction: column
+			justify-content: space-around
+			margin-left: 15px
+			&--1
+				text-transform: uppercase
+				font-size: 24px
+				font-family: $dmedium
+				color: $dark
+				letter-spacing: 2.16px
+			&--2
+				color: $dark
+				font-size: 12px
+				font-family: $dmedium
+	&__right
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__navbar
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: 718px
+		padding-left: 14px
+	&__nav
+		display: flex
+		flex-direction: column
+		align-items: center
+		position: relative
+		list-style-type: none
+		&--search
+			display: flex
+			justify-content: center
+			align-items: center
+			border: 1px solid $white
+			width: 25px
+			height: 25px
+			border-radius: 50%
+			transition: $transition border
+			&:hover
+				border: 1px solid $secondary
+				background-color: $bgsecondary
+		&-item
+			position: relative
+			display: flex
+			align-items: center
+			justify-content: space-between
+			color: $dark
+			font-size: 16px
+			text-decoration: none
+			font-family: $dmedium
+			transition: $transition
+			border-bottom: 1px solid trasparent
+			&::after
+				// content: ''
+				width: 100%
+				height: 2px
+				z-index: 1000
+				bottom: -5px
+				position: absolute
+				background-color: $primary	
+			&:hover
+				color: $primary
+				&::after
+					content: ''
+				// border-bottom: 1px solid $primary
+			&-list-1, &-list-2, &-list-3, &-list-4, &-list-5, &-list-6, 
+				height: 0
+				overflow: hidden
+				position: absolute
+				top: 22px
+				margin-left: 7px
+				margin-top: 5px
+				z-index: 10
+				width: 100px
+				transition: $transitionl height
+			&-list
+				&-li
+					display: flex
+					align-items: flex-end
+					padding-left: 2px
+					margin-top: 2px
+					list-style: none
+					background-color: darken($bgsecondary, 30%)
+					height: 20px
+					font-family: $dregular
+					font-size: 16px
+					color: $dark
+					cursor: pointer
+				&-active-1
+					height: 66px
+				&-active-2
+					height: 132px
+				&-active-3
+					height: 176px
+				&-active-4
+					height: 44px
+				&-active-5
+					height: 110px
+				&-active-6
+					height: 132px
+			&--search
+				width: 13px
+				height: 13px
+				margin-top: 5px
+				fill: $primary
+			&-arrow
+				opacity: 0
+				position: absolute
+				right: -11px	
+				width: 8px
+				top: 8px
+				fill: $primary
+				transform: rotate(-90deg)
+				transition: $transition
+				&-active-1
+					opacity: 1
+				&-active-2
+					transform: rotate(0deg)
+					opacity: 1
+	&__my-items
+		z-index: 1
+		margin-top: 0
+		display: flex
+		align-items: flex-start
+		transition: $transition
+	&__my-item
+		&-active
+			// position: absolute
+			margin-top: 16px !important
+			height: 100px !important
+		&-active-2
+			margin-top: 16px !important
+			height: 84px !important
+		&-active-3
+			opacity: 0 !important
+		&-active-4
+			transform: translateX(-200px)
+	&__like, &__bag
+		position: relative
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: space-between
+		width: 61px
+		height: 84px
+		text-decoration: none
+		transition: $transition
+		&-image
+			width: 20px
+			margin-top: 15px
+		&-numb
+			margin-bottom: 25px
+			font-family: $dmedium
+	&__like
+		border: 1px solid $secondary
+		border-bottom: none
+		margin-right: 10px
+		margin-left: 49px
+		&-image
+			fill: $primary
+		&-numb
+			color: $primary
+		&::after, &::before
+			position: absolute
+			content: ''
+			height: 1px
+			width: 31px
+			background-color: $secondary
+			bottom: 0
+		&::after
+			left: 0
+			transform: rotate(-18deg)
+			transform-origin: 0
+		&::before
+			right: 0
+			transform: rotate(18deg)
+			transform-origin: 100%
+	&__bag
+		background-color: $primary
+		border: none
+		&-image
+			fill: $white
+		&-numb
+			color: $white
+		&-triangle
+			position: absolute
+			bottom: -1px
+			height: 61px
+			width: 61px
+			border: 30.5px solid transparent
+			border-bottom: 10px solid $bgsecondary
+

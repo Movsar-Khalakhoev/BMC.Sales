@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon.svg" type="image/x-icon">
+	<link rel="stylesheet" href="../css/swiper.min.css">
+	<link rel="stylesheet" href="../css/catalog/style.css">
+	<title>BMC Sales - Каталог</title>
+</head>
+<body>
+	<!-- Yandex.Metrika counter --> <script> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(61659244, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/61659244" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+	<header class="top-header">
+		<div class="container top-header__container">
+			<div class="top-header__left">
+				<a href="http://webfollio.ru/bmcsales/" class="top-header__logo-link"><img class="logo top-header__logo" src="../img/main/top-fixed-header/logo.png" alt="logo"></a>
+				<ul class="top-header__navbar">
+					<li class="top-header__nav-item">
+						<a href="#" class="top-header__text">Соц. сети</a>
+						<svg class="top-header__icon" enable-background="new 0 0 511.096 511.096" height="512" viewBox="0 0 511.096 511.096" width="512" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m74.414 480.548h-36.214l25.607-25.607c13.807-13.807 22.429-31.765 24.747-51.246-59.127-38.802-88.554-95.014-88.554-153.944 0-108.719 99.923-219.203 256.414-219.203 165.785 0 254.682 101.666 254.682 209.678 0 108.724-89.836 210.322-254.682 210.322-28.877 0-59.01-3.855-85.913-10.928-25.467 26.121-59.973 40.928-96.087 40.928z"/></g></g></svg>
+					</li>
+					<li class="top-header__lines"></li>
+					<li class="top-header__nav-item">
+						<a href="#" class="top-header__text">Торгов. сети</a>
+						<svg class="top-header__icon" height="456pt" viewBox="0 -13 456.83393 456" width="456pt" xmlns="http://www.w3.org/2000/svg"><path d="m150.355469 322.371094c-30.046875 0-54.402344 24.355468-54.402344 54.398437 0 30.046875 24.355469 54.402344 54.402344 54.402344 30.042969 0 54.398437-24.355469 54.398437-54.402344-.03125-30.03125-24.367187-54.367187-54.398437-54.398437zm0 0"/><path d="m454.855469 98.070312c-1.902344-2.5-4.859375-3.976562-8-4h-353.101563l-7.199218-40.300781c-4.4375-24.808593-23.882813-44.210937-48.699219-48.597656l-26.101563-4.601563c-5.441406-.964843-10.632812 2.660157-11.601562 8.101563-.964844 5.4375 2.660156 10.632813 8.101562 11.597656l26.199219 4.601563c16.53125 2.929687 29.472656 15.871094 32.402344 32.398437l35.398437 199.703125c4.179688 23.894532 24.941406 41.320313 49.199219 41.296875h210c22.0625.070313 41.546875-14.371093 47.902344-35.5l47-155.796875c.988281-3.035156.425781-6.359375-1.5-8.902344zm0 0"/><path d="m360.355469 322.371094c-30.046875 0-54.402344 24.355468-54.402344 54.398437 0 30.046875 24.355469 54.402344 54.402344 54.402344 30.042969 0 54.398437-24.355469 54.398437-54.402344-.03125-30.03125-24.367187-54.367187-54.398437-54.398437zm0 0"/></svg>
+					</li>
+					<li class="top-header__lines"></li>
+					<li class="top-header__nav-item">
+						<a href="#" class="top-header__text">Туристич. сети</a>
+						<svg class="top-header__icon" height="512pt" viewBox="0 -2 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m241 507.355469v-108.84375c-27.257812 1.039062-54.253906 4.882812-79.941406 11.253906 4.136718 9.996094 8.664062 19.570313 13.566406 28.609375 19.566406 36.054688 43.882812 60.976562 66.375 68.980469zm0 0"/><path d="m337.375 438.375c4.902344-9.035156 9.429688-18.613281 13.566406-28.609375-25.6875-6.371094-52.683594-10.214844-79.941406-11.253906v108.84375c22.492188-8.003907 46.808594-32.925781 66.375-68.980469zm0 0"/><path d="m241 368.492188v-99.816407h-109.390625c1.367187 38.96875 8.015625 77.710938 19.148437 112.785157 28.980469-7.433594 59.496094-11.875 90.242188-12.96875zm0 0"/><path d="m241 238.679688v-99.816407c-30.746094-1.09375-61.261719-5.535156-90.242188-12.964843-11.132812 35.074218-17.78125 73.8125-19.148437 112.78125zm0 0"/><path d="m379.953125 89.128906c18.246094-6.152344 35.542969-13.640625 51.449219-22.347656-27.929688-26.230469-61.714844-46.300781-99.167969-57.984375 11.21875 12.675781 21.832031 28.050781 31.503906 45.875 5.941407 10.941406 11.347657 22.464844 16.214844 34.457031zm0 0"/><path d="m174.625 68.980469c-4.902344 9.039062-9.429688 18.613281-13.566406 28.609375 25.6875 6.371094 52.683594 10.214844 79.941406 11.253906v-108.84375c-22.492188 8.003906-46.808594 32.925781-66.375 68.980469zm0 0"/><path d="m271 268.675781v99.816407c30.75 1.097656 61.261719 5.535156 90.242188 12.96875 11.132812-35.074219 17.78125-73.816407 19.152343-112.785157zm0 0"/><path d="m271 138.863281v99.816407h109.390625c-1.367187-38.96875-8.015625-77.707032-19.148437-112.78125-28.980469 7.429687-59.492188 11.871093-90.242188 12.964843zm0 0"/><path d="m121.878906 390.039062c-11.992187-37.757812-18.960937-79.082031-20.300781-121.363281h-101.578125c3.285156 56.679688 25.058594 108.472657 59.367188 149.433594 19.109374-11.089844 40.175781-20.503906 62.511718-28.070313zm0 0"/><path d="m379.953125 418.226562c-4.871094 11.992188-10.277344 23.515626-16.214844 34.460938-9.671875 17.824219-20.285156 33.195312-31.503906 45.871094 37.453125-11.683594 71.238281-31.753906 99.171875-57.984375-15.910156-8.707031-33.207031-16.195313-51.453125-22.347657zm0 0"/><path d="m132.046875 418.226562c-18.246094 6.152344-35.542969 13.640626-51.449219 22.347657 27.929688 26.234375 61.714844 46.300781 99.167969 57.988281-11.214844-12.679688-21.828125-28.050781-31.503906-45.875-5.941407-10.945312-11.347657-22.46875-16.214844-34.460938zm0 0"/><path d="m390.121094 117.316406c11.992187 37.757813 18.960937 79.082032 20.300781 121.363282h101.578125c-3.285156-56.679688-25.058594-108.46875-59.367188-149.429688-19.109374 11.089844-40.175781 20.5-62.511718 28.066406zm0 0"/><path d="m390.121094 390.039062c22.335937 7.566407 43.402344 16.976563 62.511718 28.066407 34.308594-40.960938 56.082032-92.753907 59.367188-149.429688h-101.578125c-1.339844 42.28125-8.308594 83.605469-20.300781 121.363281zm0 0"/><path d="m271 0v108.84375c27.257812-1.039062 54.253906-4.882812 79.941406-11.25-4.136718-10-8.660156-19.574219-13.566406-28.613281-19.566406-36.054688-43.882812-60.976563-66.375-68.980469zm0 0"/><path d="m121.878906 117.316406c-22.335937-7.566406-43.402344-16.976562-62.511718-28.066406-34.3125 40.960938-56.082032 92.753906-59.367188 149.429688h101.578125c1.339844-42.28125 8.308594-83.605469 20.300781-121.363282zm0 0"/><path d="m132.046875 89.128906c4.871094-11.992187 10.277344-23.515625 16.214844-34.457031 9.671875-17.828125 20.285156-33.199219 31.503906-45.875-37.453125 11.683594-71.238281 31.753906-99.171875 57.984375 15.910156 8.707031 33.207031 16.195312 51.453125 22.347656zm0 0"/></svg>
+					</li>
+					<li class="top-header__lines"></li>
+					<li class="top-header__nav-item">
+						<a href="#" class="top-header__text">Ассоциации</a>
+						<svg class="top-header__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g>	<path d="M256,96C144.341,96,47.559,161.021,0,256c47.559,94.979,144.341,160,256,160c111.656,0,208.439-65.021,256-160		C464.441,161.021,367.656,96,256,96z M382.225,180.852c30.082,19.187,55.572,44.887,74.719,75.148		c-19.146,30.261-44.639,55.961-74.719,75.148C344.428,355.257,300.779,368,256,368c-44.78,0-88.428-12.743-126.225-36.852		c-30.08-19.188-55.57-44.888-74.717-75.148c19.146-30.262,44.637-55.962,74.717-75.148c1.959-1.25,3.938-2.461,5.929-3.65		C130.725,190.866,128,205.613,128,221c0,70.691,57.308,128,128,128c70.691,0,128-57.309,128-128		c0-15.387-2.725-30.134-7.703-43.799C378.285,178.39,380.266,179.602,382.225,180.852z M256,205c0,26.51-21.49,48-48,48		s-48-21.49-48-48s21.49-48,48-48S256,178.49,256,205z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+					</li>
+					<li class="top-header__lines"></li>
+					<li class="top-header__nav-item">
+						<a href="#" class="top-header__text">Сервисы</a>
+						<svg class="top-header__icon" height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m505.492188 106.113281c-1.683594-5.335937-6.035157-9.386719-11.476563-10.710937-5.417969-1.324219-11.15625.277344-15.105469 4.222656l-67.582031 67.5625-51.734375-14.804688-14.804688-51.730468 67.585938-67.585938c3.964844-3.945312 5.546875-9.683594 4.222656-15.105468-1.324218-5.4375-5.375-9.769532-10.710937-11.476563-13.652344-4.285156-28.179688-6.484375-43.21875-6.484375-82.347657 0-149.335938 66.988281-149.335938 149.332031 0 17.429688 2.925781 34.261719 8.707031 50.175781l-203.265624 203.265626c-12.117188 12.097656-18.773438 28.160156-18.773438 45.226562s6.65625 33.128906 18.773438 45.226562c12.097656 12.117188 28.160156 18.773438 45.226562 18.773438s33.128906-6.65625 45.226562-18.773438l203.265626-203.265624c15.914062 5.78125 32.746093 8.707031 50.175781 8.707031 82.34375 0 149.332031-66.988281 149.332031-149.335938 0-15.039062-2.199219-29.566406-6.507812-43.21875zm0 0"/></svg>
+					</li>
+					<li class="top-header__lines"></li>
+					<li class="top-header__nav-item top-header__nav-item--last">
+						<a href="#"><svg class="top-header__icon top-header__icon--last" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 width="553.048px" height="553.048px" viewBox="0 0 553.048 553.048" style="enable-background:new 0 0 553.048 553.048;"	 xml:space="preserve"><g>	<g>		<path d="M76.774,179.141c-9.529,0-17.614,3.323-24.26,9.969c-6.646,6.646-9.97,14.621-9.97,23.929v142.914			c0,9.541,3.323,17.619,9.97,24.266c6.646,6.646,14.731,9.97,24.26,9.97c9.522,0,17.558-3.323,24.101-9.97			c6.53-6.646,9.804-14.725,9.804-24.266V213.039c0-9.309-3.323-17.283-9.97-23.929C94.062,182.464,86.082,179.141,76.774,179.141z"			/>		<path d="M351.972,50.847L375.57,7.315c1.549-2.882,0.998-5.092-1.658-6.646c-2.883-1.34-5.098-0.661-6.646,1.989l-23.928,43.88			c-21.055-9.309-43.324-13.972-66.807-13.972c-23.488,0-45.759,4.664-66.806,13.972l-23.929-43.88			c-1.555-2.65-3.77-3.323-6.646-1.989c-2.662,1.561-3.213,3.764-1.658,6.646l23.599,43.532			c-23.929,12.203-42.987,29.198-57.167,51.022c-14.18,21.836-21.273,45.698-21.273,71.628h307.426			c0-25.924-7.094-49.787-21.273-71.628C394.623,80.045,375.675,63.05,351.972,50.847z M215.539,114.165			c-2.552,2.558-5.6,3.831-9.143,3.831c-3.55,0-6.536-1.273-8.972-3.831c-2.436-2.546-3.654-5.582-3.654-9.137			c0-3.543,1.218-6.585,3.654-9.137c2.436-2.546,5.429-3.819,8.972-3.819s6.591,1.273,9.143,3.819			c2.546,2.558,3.825,5.594,3.825,9.137C219.357,108.577,218.079,111.619,215.539,114.165z M355.625,114.165			c-2.441,2.558-5.434,3.831-8.971,3.831c-3.551,0-6.598-1.273-9.145-3.831c-2.551-2.546-3.824-5.582-3.824-9.137			c0-3.543,1.273-6.585,3.824-9.137c2.547-2.546,5.594-3.819,9.145-3.819c3.543,0,6.529,1.273,8.971,3.819			c2.438,2.558,3.654,5.594,3.654,9.137C359.279,108.577,358.062,111.619,355.625,114.165z"/>		<path d="M123.971,406.804c0,10.202,3.543,18.838,10.63,25.925c7.093,7.087,15.729,10.63,25.924,10.63h24.596l0.337,75.454			c0,9.528,3.323,17.619,9.969,24.266s14.627,9.97,23.929,9.97c9.523,0,17.613-3.323,24.26-9.97s9.97-14.737,9.97-24.266v-75.447			h45.864v75.447c0,9.528,3.322,17.619,9.969,24.266s14.73,9.97,24.26,9.97c9.523,0,17.613-3.323,24.26-9.97			s9.969-14.737,9.969-24.266v-75.447h24.928c9.969,0,18.494-3.544,25.594-10.631c7.086-7.087,10.631-15.723,10.631-25.924V185.45			H123.971V406.804z"/>		<path d="M476.275,179.141c-9.309,0-17.283,3.274-23.93,9.804c-6.646,6.542-9.969,14.578-9.969,24.094v142.914			c0,9.541,3.322,17.619,9.969,24.266s14.627,9.97,23.93,9.97c9.523,0,17.613-3.323,24.26-9.97s9.969-14.725,9.969-24.266V213.039			c0-9.517-3.322-17.552-9.969-24.094C493.888,182.415,485.798,179.141,476.275,179.141z"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></a>
+					</li>
+				</ul>
+			</div>
+			<!-- /.top-header__left -->
+			<a href="#" class="top-header__right" data-toggle="modal">
+				<p class="top-header__text top-header__text--access">Вход на сайт</p>
+				<svg class="top-header__icon top-header__icon-right" height="512pt" viewBox="-64 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m336 192h-16v-64c0-70.59375-57.40625-128-128-128s-128 57.40625-128 128v64h-16c-26.453125 0-48 21.523438-48 48v224c0 26.476562 21.546875 48 48 48h288c26.453125 0 48-21.523438 48-48v-224c0-26.476562-21.546875-48-48-48zm-229.332031-64c0-47.0625 38.269531-85.332031 85.332031-85.332031s85.332031 38.269531 85.332031 85.332031v64h-170.664062zm0 0"/></svg>
+			</a>
+			<!-- /.top-header__right -->
+			<div class="top-header__burger"><div class="top-header__burger-button"></div></div>
+		</div>
+		<!-- /.container -->
+	</header>
+	<!-- /.top-header -->
+	<main>
+		<section class="main-section">
+			<div class="container main-section__container">
+				<div class="main-section__top-panel">
+					<a href="index.html" class="main-section__left">
+						<img src="../img/main/top-not-fixed-header/logo.png" alt="logo" class="main-section__logo-image">
+						<div class="main-section__left-text">
+							<h2 class="main-section__left-text--1">bmc sales</h2>
+							<p class="main-section__left-text--2">партнерская сеть продаж</p>
+						</div>
+					</a>
+					<!-- /.main-section__left -->
+					<div class="main-section__right">
+						<ul class="main-section__navbar">
+							<li class="main-section__nav main-section__nav-1"><a href="#" class="main-section__nav-item">Объявления <svg class="main-section__nav-item-arrow main-section__nav-item-arrow-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve"><g>	<g>		<polygon points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093 		"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></a><div class="main-section__nav-item-list-1">
+								<ul>
+									<li class="main-section__nav-item-list-li">Посуда</li>
+									<li class="main-section__nav-item-list-li">Олени</li>
+									<li class="main-section__nav-item-list-li">Бревно</li>
+								</ul>
+							</div></li>
+							<li class="main-section__nav main-section__nav-2"><a href="catalog.html" class="main-section__nav-item">Каталоги <svg class="main-section__nav-item-arrow main-section__nav-item-arrow-2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve"><g>	<g>		<polygon points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093 		"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></a><div class="main-section__nav-item-list-2">
+								<ul>
+									<li class="main-section__nav-item-list-li">Посуда</li>
+									<li class="main-section__nav-item-list-li">Олени</li>
+									<li class="main-section__nav-item-list-li">Бревно</li>
+									<li class="main-section__nav-item-list-li">Посуда</li>
+									<li class="main-section__nav-item-list-li">Олени</li>
+									<li class="main-section__nav-item-list-li">Бревно</li>
+
+								</ul>
+							</div></li>
+							<li class="main-section__nav main-section__nav-3"><a href="#" class="main-section__nav-item">Участники <svg class="main-section__nav-item-arrow main-section__nav-item-arrow-3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve"><g>	<g>		<polygon points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093 		"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></a><div class="main-section__nav-item-list-3">
+								<ul>
+									<li class="main-section__nav-item-list-li">Посуда</li>
+									<li class="main-section__nav-item-list-li">Олени</li>
+									<li class="main-section__nav-item-list-li">Бревно</li>
+									<li class="main-section__nav-item-list-li">Посуда</li>
+									<li class="main-section__nav-item-list-li">Олени</li>
+									<li class="main-section__nav-item-list-li">Бревно</li>
+									<li class="main-section__nav-item-list-li">Посуда</li>
+									<li class="main-section__nav-item-list-li">Олени</li>
+									<li class="main-section__nav-item-list-li">Бревно</li>
+								</ul>
+							</div></li>
+							<li class="main-section__nav main-section__nav-4"><a href="#" class="main-section__nav-item">Партнеры <svg class="main-section__nav-item-arrow main-section__nav-item-arrow-4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve"><g>	<g>		<polygon points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093 		"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></a><div class="main-section__nav-item-list-4">
+								<ul>
+									<li class="main-section__nav-item-list-li">Посуда</li>
+									<li class="main-section__nav-item-list-li">Олени</li>
+									<li class="main-section__nav-item-list-li">Бревно</li>
+								</ul>
+							</div></li>
+							<li class="main-section__nav main-section__nav-5"><a href="#" class="main-section__nav-item">О платформе <svg class="main-section__nav-item-arrow main-section__nav-item-arrow-5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve"><g>	<g>		<polygon points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093 		"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></a><div class="main-section__nav-item-list-5">
+								<ul>
+									<li class="main-section__nav-item-list-li">Посуда</li>
+									<li class="main-section__nav-item-list-li">Олени</li>
+									<li class="main-section__nav-item-list-li">Бревно</li>
+									<li class="main-section__nav-item-list-li">Посуда</li>
+									<li class="main-section__nav-item-list-li">Олени</li>
+									<li class="main-section__nav-item-list-li">Бревно</li>
+								</ul>
+							</div></li>
+							<li class="main-section__nav main-section__nav-6"><a href="#" class="main-section__nav-item">Новости <svg class="main-section__nav-item-arrow main-section__nav-item-arrow-6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve"><g>	<g>		<polygon points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093 		"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></a><div class="main-section__nav-item-list-6">
+								<ul>
+									<li class="main-section__nav-item-list-li">Посуда</li>
+									<li class="main-section__nav-item-list-li">Олени</li>
+									<li class="main-section__nav-item-list-li">Бревно</li>
+									<li class="main-section__nav-item-list-li">Посуда</li>
+									<li class="main-section__nav-item-list-li">Олени</li>
+									<li class="main-section__nav-item-list-li">Бревно</li>
+								</ul>
+							</div></li>
+							<li class="main-section__nav main-section__nav--search"><a href="#"><svg class="main-section__nav-item--search" enable-background="new 0 0 515.558 515.558" height="512" viewBox="0 0 515.558 515.558" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m378.344 332.78c25.37-34.645 40.545-77.2 40.545-123.333 0-115.484-93.961-209.445-209.445-209.445s-209.444 93.961-209.444 209.445 93.961 209.445 209.445 209.445c46.133 0 88.692-15.177 123.337-40.547l137.212 137.212 45.564-45.564c0-.001-137.214-137.213-137.214-137.213zm-168.899 21.667c-79.958 0-145-65.042-145-145s65.042-145 145-145 145 65.042 145 145-65.043 145-145 145z"/></svg></a></li>
+						</ul>
+						<div class="main-section__my-items">
+							<a href="#" class="main-section__like main-section__my-item">
+								<svg class="main-section__like-image" viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"/></svg>
+								<p class="main-section__like-numb">2</p>
+								<div class="main-section__like-triangle"></div>
+							</a>
+							<a href="#" class="main-section__bag main-section__my-item">
+								<svg class="main-section__bag-image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g>	<g>		<path d="M447.988,139.696c-0.156-2.084-1.9-3.696-3.988-3.696h-72v-20C372,52.036,319.96,0,256,0S140,52.036,140,116v20H68			c-2.088,0-3.832,1.612-3.988,3.696l-28,368c-0.084,1.108,0.296,2.204,1.056,3.02C37.824,511.536,38.888,512,40,512h432			c1.112,0,2.176-0.464,2.932-1.28c0.756-0.816,1.14-1.912,1.056-3.02L447.988,139.696z M172,116c0-46.316,37.68-84,84-84			s84,37.684,84,84v20H172V116z M156,248c-22.06,0-40-17.944-40-40c0-15.964,8-30.348,24-36.66V208c0,8.824,7.18,16,16,16			s16-7.176,16-16v-36.636c16,6.312,24,20.804,24,36.636C196,230.056,178.06,248,156,248z M356,248c-22.06,0-40-17.944-40-40			c0-15.964,8-30.348,24-36.66V208c0,8.824,7.18,16,16,16s16-7.176,16-16v-36.636c16,6.312,24,20.804,24,36.636			C396,230.056,378.06,248,356,248z"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+								<p class="main-section__bag-numb">0</p>
+								<div class="main-section__bag-triangle"></div>
+							</a>
+						</div>
+					</div>
+					<!-- /.main-section__right -->
+				</div>
+				<!-- /.main-section__top-panel -->
+				<ul class="main-section__destination">
+					<li><a href="http://webfollio.ru/bmcsales/" class="main-section__destination--1">Главная</a></li>
+					<li class="main-section__lines"></li>
+					<li><p class="main-section__destination--2">Каталог</p></li>
+				</ul>
+				<!-- /.main-section__destination -->
+				<div class="main-section__sort">
+					<div class="main-section__sort-new">
+						<p class="main-section__sort-label">Сортировать по:</p>
+						<select name="newList" id="new-list" class="main-section__sort-new-list">
+							<option value="" class="main-section__sort-new-li">Сначала новые</option>
+							<option value="" class="main-section__sort-new-li">По популярности</option>
+							<option value="" class="main-section__sort-new-li">По цене</option>
+						</select>
+					</div>
+					<div class="main-section__sort-page">
+						<p class="main-section__sort-label">Товаров на стр.:</p>
+						<select name="pageList" id="page-list" class="main-section__sort-page-list">
+							<option value="1" class="main-section__sort-page-li">24 на странице</option>
+							<option value="2" class="main-section__sort-page-li">30 на странице</option>
+							<option value="3" class="main-section__sort-page-li">36 на странице</option>
+						</select>
+					</div>
+				</div>
+				<!-- /.main-section__sort -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.main-section -->
+		<section class="catalog">
+			<div class="container"><div class="catalog__header-box"><h2 class="catalog__header">Категории товаров</h2><svg class="catalog__header-icon" height="475pt" viewBox="-59 0 475 475.56972" width="475pt" xmlns="http://www.w3.org/2000/svg"><path d="m318.917969 187.566406h-.667969c-9.121094-.050781-17.933594 3.300782-24.71875 9.398438-5.492188-15.199219-19.449219-26.125-35.796875-26.125-10.019531.070312-19.589844 4.183594-26.53125 11.414062-6.382813-12.921875-19.1875-21.6875-33.910156-21.6875h-.710938c-7.890625-.121094-15.589843 2.445313-21.832031 7.273438v-92.121094c0-22.261719-17.332031-40.371094-38.414062-40.371094-21.058594 0-38.300782 18.097656-38.3125 40.34375l-.175782 182.773438-10.34375-12.5625c-9.070312-11.292969-22.421875-18.304688-36.867187-19.363282-14.148438-.96875-28.066407 3.953126-38.457031 13.609376l-9 7.457031c-2.902344 2.40625-3.730469 6.507812-1.992188 9.851562l87.503906 168.199219c16 30.738281 46.441406 49.914062 79.445313 49.914062h98.613281v-.085937c50 0 90.539062-43.386719 90.589844-96.660156.019531-23.835938-.070313-41.601563-.054688-56 .050782-38.523438.011719-52.738281-.085937-95.179688-.050781-22.210937-17.257813-40.078125-38.28125-40.078125zm22.25 135.203125c-.015625 14.402344-.039063 32.238281-.0625 56.074219-.042969 44.464844-33.609375 80.722656-74.824219 80.722656h-98.140625c-27.015625 0-52.019531-15.878906-65.25-41.300781l-84.527344-162.425781 4.171875-3.480469c.105469-.085937.207032-.1875.308594-.277344 7.175781-6.753906 16.832031-10.222656 26.664062-9.578125 10.050782.769532 19.324219 5.683594 25.609376 13.5625l24.488281 29.796875c2.140625 2.613281 5.695312 3.59375 8.875 2.457031 3.179687-1.136718 5.304687-4.152343 5.304687-7.527343l.144532-205.09375c.007812-13.429688 10.164062-24.355469 22.414062-24.355469s22.40625 10.9375 22.40625 24.375v123.660156c0 .429688-.019531.863282-.019531 1.300782 0 .1875.019531.378906.019531.5625v52.871093c0 4.417969 3.582031 8 8 8s8-3.582031 8-8v-54.464843c0-12.957032 9.898438-23.082032 21.832031-23.082032h.710938c12.257812 0 22.457031 10.683594 22.457031 24.121094v48.378906c0 4.417969 3.582031 8 8 8s8-3.582031 8-8v-37.957031c0-13.441406 9.710938-24.375 22.035156-24.375 12.253906 0 21.964844 10.929687 21.964844 24.375v35.808594c0 4.417969 3.582031 8 8 8s8-3.582031 8-8v-19.390625c0-13.441406 10.242188-23.960938 22.5-23.960938h.667969c12.226562 0 22.191406 10.699219 22.222656 24.097656.097656 42.410157.078125 56.609376.027344 95.105469zm0 0"/><path d="m72.609375 79.171875c4.417969 0 8-3.582031 8-8 .128906-30.527344 24.914063-55.203125 55.4375-55.203125 30.527344 0 55.308594 24.675781 55.4375 55.203125 0 4.417969 3.582031 8 8 8s8-3.582031 8-8c-.148437-39.351563-32.085937-71.171875-71.4375-71.171875-39.347656 0-71.289063 31.820312-71.4375 71.171875 0 4.417969 3.582031 8 8 8zm0 0"/></svg></div></div>
+			<div class="container catalog__container">
+				<div class="catalog__left">
+					<div class="catalog__left-close"></div>
+					<a href="#" class="catalog__left-button--1"><svg class="catalog__left-button--1-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 512.011 512.011" style="enable-background:new 0 0 512.011 512.011;" xml:space="preserve"><g>	<g>		<path d="M192.006,16.006c0,35.296,28.704,64,64,64c35.264,0,64-28.704,64-64H192.006z"/>	</g></g><g>	<g>		<path d="M503.942,82.118l-112-64c-2.4-1.376-5.152-2.112-7.936-2.112h-32c0,52.928-43.072,96-96,96c-52.928,0-96-43.072-96-96h-32			c-2.784,0-5.504,0.736-7.936,2.112l-112,64c-6.4,3.648-9.472,11.2-7.456,18.272l32,112c2.368,8.32,11.008,13.216,19.264,11.136			l44.128-11.008v267.488c0,8.832,7.168,16,16,16h288c8.832,0,16-7.168,16-16V212.518l44.128,11.008			c8.256,2.112,16.864-2.816,19.264-11.136l32-112C513.414,93.318,510.342,85.766,503.942,82.118z"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>Одежда</a>
+					<a href="#" class="catalog__left-button--2"><svg class="catalog__left-button--2-icon" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="m332.118 489.943a34.6 34.6 0 0 0 36.864-32.183l1.519-22.411-67.324-30.1-3.242 47.835a34.642 34.642 0 0 0 32.183 36.859z"/><path d="m307.837 352.35 71.305 33.561 23.085-82.655c16.523-76.042 6.307-132.859-28.036-155.9-20.142-13.517-41.943-10.763-54.613-2.035-.143.1-.291.191-.442.277-.1.056-11.473 6.713-21.448 21.458-13.3 19.65-18.006 43.717-14 71.538z"/><path d="m208.509 289.305-67.382 29.979 1.473 22.416a34.6 34.6 0 1 0 69.057-4.55z"/><path d="m132.58 269.828 71.368-33.428 24.366-113.715c4.055-27.813-.61-51.888-13.868-71.563-9.948-14.764-21.312-21.443-21.425-21.508-.14-.081-.293-.178-.426-.269-12.652-8.75-34.447-11.546-54.616 1.933-34.387 22.979-44.708 79.778-28.328 155.851z"/></svg>Обувь</a>
+					<ul class="catalog__left-list">
+							<li><a href="#" class="catalog__left-li">Развлечения, досуг</a></li>
+							<li><a href="#" class="catalog__left-li">Посуда и зеркала</a></li>
+							<li><a href="#" class="catalog__left-li">Парфюмерия и косметика</a></li>
+							<li><a href="#" class="catalog__left-li">Оптика</a></li>
+							<li><a href="#" class="catalog__left-li">Мебель</a></li>
+							<li><a href="#" class="catalog__left-li">Компьютерная техника</a></li>
+							<li><a href="#" class="catalog__left-li">Кож.галантерея</a></li>
+							<li><a href="#" class="catalog__left-li">Канцелярские товары</a></li>
+							<li><a href="#" class="catalog__left-li">Источники света</a></li>
+							<li><a href="#" class="catalog__left-li">Инструменты</a></li>
+							<li><a href="#" class="catalog__left-li">Здоровье</a></li>
+							<li><a href="#" class="catalog__left-li">Животные и растения</a></li>
+							<li><a href="#" class="catalog__left-li">Дача и сад</a></li>
+							<li><a href="#" class="catalog__left-li">Бытовая химия</a></li>
+							<li><a href="#" class="catalog__left-li">Сельскохозяйственная продукция и сырье</a></li>
+							<li><a href="#" class="catalog__left-li">Авто</a></li>
+							<li><a href="#" class="catalog__left-li">Очки</a></li>
+							<li><a href="#" class="catalog__left-li">Мобильные телефоны</a></li>
+							<li><a href="#" class="catalog__left-li">Средства личной гигиены</a></li>
+							<li><a href="#" class="catalog__left-li">Строительные материалы</a></li>
+							<li><a href="#" class="catalog__left-li">Сувениры</a></li>
+							<li><a href="#" class="catalog__left-li">Электротовары</a></li>
+							<li><a href="#" class="catalog__left-li">Ювелирные изделия</a></li>
+							<li><a href="#" class="catalog__left-li">Домашний текстиль, ковры</a></li>
+							<li><a href="#" class="catalog__left-li">Туризм и спорт</a></li>
+							<li><a href="#" class="catalog__left-li">Сумки, кошельки</a></li>
+							<li><a href="#" class="catalog__left-li">Разное</a></li>
+							<li><a href="#" class="catalog__left-li">Одежда</a></li>
+							<li><a href="#" class="catalog__left-li">Обувь</a></li>
+							<li><a href="#" class="catalog__left-li">Продукты питания</a></li>
+							<li><a href="#" class="catalog__left-li">Книги</a></li>
+					</ul>
+				</div>
+				<!-- /.catalog__left -->
+				<div class="catalog__right">
+					<div class="button catalog__card">
+						<div class="catalog__card-image-box">
+							<img src="../img/catalog/right/catalog-image-1.png" alt="image" class="populal__card-image">
+						</div>
+						<div class="catalog__card-description">
+							<div class="catalog__card-name">Блузка модель 111</div>
+							<div class="catalog__card-label">Женская одежда</div>
+							<div class="rating-area catalog__card-rating">
+								<input type="radio" id="star-5" name="rating-1" value="5">
+								<label for="star-5" title="Оценка «5»"></label>
+								<input type="radio" id="star-4" name="rating-1" value="4">
+								<label for="star-4" title="Оценка «4»"></label>
+								<input type="radio" id="star-3" name="rating-1" value="3">
+								<label for="star-3" title="Оценка «3»"></label>
+								<input type="radio" id="star-2" name="rating-1" value="2">
+								<label for="star-2" title="Оценка «2»"></label>
+								<input type="radio" id="star-1" name="rating-1" value="1">
+								<label for="star-1" title="Оценка «1»"></label>
+							</div>
+						</div>
+						<div class="catalog__card-price-box">
+							<div class="catalog__card-price"> <span class="catalog__card-price-span">3 000.00</span> тг.</div>
+							<div class="catalog__card-add">
+								<span class="catalog__card-add-link"><svg class="catalog__card-add-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g>	<g>		<path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107			c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120			c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span>
+							</div>
+						</div>
+					</div>
+					<!-- /.catalog__card -->
+					<div class="button catalog__card">
+						<div class="catalog__card-image-box">
+							<img src="../img/catalog/right/catalog-image-2.png" alt="image" class="populal__card-image">
+						</div>
+						<div class="catalog__card-description">
+							<div class="catalog__card-name">Пуховик артикул: 2801</div>
+							<div class="catalog__card-label">Пуховики</div>
+							<div class="rating-area catalog__card-rating">
+								<input type="radio" id="star-10" name="rating-2" value="5">
+								<label for="star-10" title="Оценка «5»"></label>
+								<input type="radio" id="star-9" name="rating-2" value="4">
+								<label for="star-9" title="Оценка «4»"></label>
+								<input type="radio" id="star-8" name="rating-2" value="3">
+								<label for="star-8" title="Оценка «3»"></label>
+								<input type="radio" id="star-7" name="rating-2" value="2">
+								<label for="star-7" title="Оценка «2»"></label>
+								<input type="radio" id="star-6" name="rating-2" value="1">
+								<label for="star-6" title="Оценка «1»"></label>
+							</div>
+						</div>
+						<div class="catalog__card-price-box">
+							<div class="catalog__card-price"> <span class="catalog__card-price-span">21 200.00</span> тг.</div>
+							<div class="catalog__card-add">
+								<span class="catalog__card-add-link"><svg class="catalog__card-add-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g>	<g>		<path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107			c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120			c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span>
+							</div>
+						</div>
+					</div>
+					<!-- /.catalog__card -->
+					<div class="button catalog__card">
+						<div class="catalog__card-image-box">
+							<img src="../img/catalog/right/catalog-image-3.png" alt="image" class="populal__card-image">
+						</div>
+						<div class="catalog__card-description">
+							<div class="catalog__card-name">Обувь Т 452</div>
+							<div class="catalog__card-label">Женская Обувь</div>
+							<div class="rating-area catalog__card-rating">
+								<input type="radio" id="star-15" name="rating-3" value="5">
+								<label for="star-15" title="Оценка «5»"></label>
+								<input type="radio" id="star-14" name="rating-3" value="4">
+								<label for="star-14" title="Оценка «4»"></label>
+								<input type="radio" id="star-13" name="rating-3" value="3">
+								<label for="star-13" title="Оценка «3»"></label>
+								<input type="radio" id="star-12" name="rating-3" value="2">
+								<label for="star-12" title="Оценка «2»"></label>
+								<input type="radio" id="star-11" name="rating-3" value="1">
+								<label for="star-11" title="Оценка «1»"></label>
+							</div>
+						</div>
+						<div class="catalog__card-price-box">
+							<div class="catalog__card-price"> <span class="catalog__card-price-span">12 555.00</span> тг.</div>
+							<div class="catalog__card-add">
+								<span class="catalog__card-add-link"><svg class="catalog__card-add-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g>	<g>		<path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107			c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120			c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span>
+							</div>
+						</div>
+					</div>
+					<!-- /.catalog__card -->
+					<div class="button catalog__card">
+						<div class="catalog__card-image-box">
+							<img src="../img/catalog/right/catalog-image-4.png" alt="image" class="populal__card-image">
+						</div>
+						<div class="catalog__card-description">
+							<div class="catalog__card-name">Рюкзак PUMA</div>
+							<div class="catalog__card-label">Рюкзаки</div>
+							<div class="rating-area catalog__card-rating">
+								<input type="radio" id="star-20" name="rating-4" value="5">
+								<label for="star-20" title="Оценка «5»"></label>
+								<input type="radio" id="star-19" name="rating-4" value="4">
+								<label for="star-19" title="Оценка «4»"></label>
+								<input type="radio" id="star-18" name="rating-4" value="3">
+								<label for="star-18" title="Оценка «3»"></label>
+								<input type="radio" id="star-17" name="rating-4" value="2">
+								<label for="star-17" title="Оценка «2»"></label>
+								<input type="radio" id="star-16" name="rating-4" value="1">
+								<label for="star-16" title="Оценка «1»"></label>
+							</div>
+						</div>
+						<div class="catalog__card-price-box">
+							<div class="catalog__card-price"> <span class="catalog__card-price-span">5 000.00</span> тг.</div>
+							<div class="catalog__card-add">
+								<span class="catalog__card-add-link"><svg class="catalog__card-add-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g>	<g>		<path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107			c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120			c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span>
+							</div>
+						</div>
+					</div>
+					<!-- /.catalog__card -->
+					<div class="button catalog__card">
+						<div class="catalog__card-image-box">
+							<img src="../img/catalog/right/catalog-image-5.png" alt="image" class="populal__card-image">
+						</div>
+						<div class="catalog__card-description">
+							<div class="catalog__card-name">Туфли детские 555</div>
+							<div class="catalog__card-label">Детская обувь</div>
+							<div class="rating-area catalog__card-rating">
+								<input type="radio" id="star-25" name="rating-5" value="5">
+								<label for="star-25" title="Оценка «5»"></label>
+								<input type="radio" id="star-24" name="rating-5" value="4">
+								<label for="star-24" title="Оценка «4»"></label>
+								<input type="radio" id="star-23" name="rating-5" value="3">
+								<label for="star-23" title="Оценка «3»"></label>
+								<input type="radio" id="star-22" name="rating-5" value="2">
+								<label for="star-22" title="Оценка «2»"></label>
+								<input type="radio" id="star-21" name="rating-5" value="1">
+								<label for="star-21" title="Оценка «1»"></label>
+							</div>
+						</div>
+						<div class="catalog__card-price-box">
+							<div class="catalog__card-price"> <span class="catalog__card-price-span">8 900.00</span> тг.</div>
+							<div class="catalog__card-add">
+								<span class="catalog__card-add-link"><svg class="catalog__card-add-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g>	<g>		<path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107			c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120			c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span>
+							</div>
+						</div>
+						<p class="catalog__card-price-old">13 750.00 тг.</p>
+						<p class="catalog__card-discount">40%</p>
+					</div>
+					<!-- /.catalog__card -->
+					<div class="button catalog__card">
+						<div class="catalog__card-image-box">
+							<img src="../img/catalog/right/catalog-image-6.png" alt="image" class="populal__card-image">
+						</div>
+						<div class="catalog__card-description">
+							<div class="catalog__card-name">Сарафан в клетку №2</div>
+							<div class="catalog__card-label">Детская одежда</div>
+							<div class="rating-area catalog__card-rating">
+								<input type="radio" id="star-30" name="rating-6" value="5">
+								<label for="star-30" title="Оценка «5»"></label>
+								<input type="radio" id="star-29" name="rating-6" value="4">
+								<label for="star-29" title="Оценка «4»"></label>
+								<input type="radio" id="star-28" name="rating-6" value="3">
+								<label for="star-28" title="Оценка «3»"></label>
+								<input type="radio" id="star-27" name="rating-6" value="2">
+								<label for="star-27" title="Оценка «2»"></label>
+								<input type="radio" id="star-26" name="rating-6" value="1">
+								<label for="star-26" title="Оценка «1»"></label>
+							</div>
+						</div>
+						<div class="catalog__card-price-box">
+							<div class="catalog__card-price"> <span class="catalog__card-price-span">8 000.00</span> тг.</div>
+							<div class="catalog__card-add">
+								<span class="catalog__card-add-link"><svg class="catalog__card-add-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g>	<g>		<path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107			c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120			c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span>
+							</div>
+						</div>
+						<p class="catalog__card-price-old">9 750.00 тг.</p>
+						<p class="catalog__card-discount">25%</p>
+					</div>
+					<!-- /.catalog__card -->
+					<div class="button catalog__card">
+						<div class="catalog__card-image-box">
+							<img src="../img/catalog/right/catalog-image-7.png" alt="image" class="populal__card-image">
+						</div>
+						<div class="catalog__card-description">
+							<div class="catalog__card-name">Пальто детское</div>
+							<div class="catalog__card-label">Детская одежда</div>
+							<div class="rating-area catalog__card-rating">
+								<input type="radio" id="star-35" name="rating-7" value="5">
+								<label for="star-35" title="Оценка «5»"></label>
+								<input type="radio" id="star-34" name="rating-7" value="4">
+								<label for="star-34" title="Оценка «4»"></label>
+								<input type="radio" id="star-33" name="rating-7" value="3">
+								<label for="star-33" title="Оценка «3»"></label>
+								<input type="radio" id="star-32" name="rating-7" value="2">
+								<label for="star-32" title="Оценка «2»"></label>
+								<input type="radio" id="star-31" name="rating-7" value="1">
+								<label for="star-31" title="Оценка «1»"></label>
+							</div>
+						</div>
+						<div class="catalog__card-price-box">
+							<div class="catalog__card-price"> <span class="catalog__card-price-span">8 300.00</span> тг.</div>
+							<div class="catalog__card-add">
+								<span class="catalog__card-add-link"><svg class="catalog__card-add-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g>	<g>		<path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107			c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120			c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span>
+							</div>
+						</div>
+						<p class="catalog__card-price-old">10 500.00 тг.</p>
+						<p class="catalog__card-discount">35%</p>
+					</div>
+					<!-- /.catalog__card -->
+					<div class="button catalog__card">
+						<div class="catalog__card-image-box">
+							<img src="../img/catalog/right/catalog-image-8.png" alt="image" class="populal__card-image">
+						</div>
+						<div class="catalog__card-description">
+							<div class="catalog__card-name">Сарафан в клетку №2</div>
+							<div class="catalog__card-label">Мужская одежда</div>
+							<div class="rating-area catalog__card-rating">
+								<input type="radio" id="star-40" name="rating-8" value="5">
+								<label for="star-40" title="Оценка «5»"></label>
+								<input type="radio" id="star-39" name="rating-8" value="4">
+								<label for="star-39" title="Оценка «4»"></label>
+								<input type="radio" id="star-38" name="rating-8" value="3">
+								<label for="star-38" title="Оценка «3»"></label>
+								<input type="radio" id="star-37" name="rating-8" value="2">
+								<label for="star-37" title="Оценка «2»"></label>
+								<input type="radio" id="star-36" name="rating-8" value="1">
+								<label for="star-36" title="Оценка «1»"></label>
+							</div>
+						</div>
+						<div class="catalog__card-price-box">
+							<div class="catalog__card-price"> <span class="catalog__card-price-span">1 300.00</span> тг.</div>
+							<div class="catalog__card-add">
+								<span class="catalog__card-add-link"><svg class="catalog__card-add-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g>	<g>		<path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107			c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120			c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span>
+							</div>
+						</div>
+						<p class="catalog__card-price-old">1 850.00 тг.</p>
+						<p class="catalog__card-discount">20%</p>
+					</div>
+					<!-- /.catalog__card -->
+					<div class="button catalog__card">
+						<div class="catalog__card-image-box">
+							<img src="../img/catalog/right/catalog-image-9.png" alt="image" class="populal__card-image">
+						</div>
+						<div class="catalog__card-description">
+							<div class="catalog__card-name">Рюкзак синий</div>
+							<div class="catalog__card-label">Аксессуары</div>
+							<div class="rating-area catalog__card-rating">
+								<input type="radio" id="star-45" name="rating-9" value="5">
+								<label for="star-45" title="Оценка «5»"></label>
+								<input type="radio" id="star-44" name="rating-9" value="4">
+								<label for="star-44" title="Оценка «4»"></label>
+								<input type="radio" id="star-43" name="rating-9" value="3">
+								<label for="star-43" title="Оценка «3»"></label>
+								<input type="radio" id="star-42" name="rating-9" value="2">
+								<label for="star-42" title="Оценка «2»"></label>
+								<input type="radio" id="star-41" name="rating-9" value="1">
+								<label for="star-41" title="Оценка «1»"></label>
+							</div>
+						</div>
+						<div class="catalog__card-price-box">
+							<div class="catalog__card-price"> <span class="catalog__card-price-span">8 300.00</span> тг.</div>
+							<div class="catalog__card-add">
+								<span class="catalog__card-add-link"><svg class="catalog__card-add-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g>	<g>		<path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107			c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120			c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span>
+							</div>
+						</div>
+						<p class="catalog__card-price-old">10 850.00 тг.</p>
+						<p class="catalog__card-discount">20%</p>
+					</div>
+					<!-- /.catalog__card -->
+					<div class="button catalog__card">
+						<div class="catalog__card-image-box">
+							<img src="../img/catalog/right/catalog-image-1.png" alt="image" class="populal__card-image">
+						</div>
+						<div class="catalog__card-description">
+							<div class="catalog__card-name">Блузка модель 111</div>
+							<div class="catalog__card-label">Женская одежда</div>
+							<div class="rating-area catalog__card-rating">
+								<input type="radio" id="star-50" name="rating-10" value="5">
+								<label for="star-50" title="Оценка «5»"></label>
+								<input type="radio" id="star-49" name="rating-10" value="4">
+								<label for="star-49" title="Оценка «4»"></label>
+								<input type="radio" id="star-48" name="rating-10" value="3">
+								<label for="star-48" title="Оценка «3»"></label>
+								<input type="radio" id="star-47" name="rating-10" value="2">
+								<label for="star-47" title="Оценка «2»"></label>
+								<input type="radio" id="star-46" name="rating-10" value="1">
+								<label for="star-46" title="Оценка «1»"></label>
+							</div>
+						</div>
+						<div class="catalog__card-price-box">
+							<div class="catalog__card-price"> <span class="catalog__card-price-span">3 000.00</span> тг.</div>
+							<div class="catalog__card-add">
+								<span class="catalog__card-add-link"><svg class="catalog__card-add-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g>	<g>		<path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107			c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120			c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span>
+							</div>
+						</div>
+					</div>
+					<!-- /.catalog__card -->
+					<div class="button catalog__card">
+						<div class="catalog__card-image-box">
+							<img src="../img/catalog/right/catalog-image-2.png" alt="image" class="populal__card-image">
+						</div>
+						<div class="catalog__card-description">
+							<div class="catalog__card-name">Пуховик артикул: 2801</div>
+							<div class="catalog__card-label">Пуховики</div>
+							<div class="rating-area catalog__card-rating">
+								<input type="radio" id="star-55" name="rating-11" value="5">
+								<label for="star-55" title="Оценка «5»"></label>
+								<input type="radio" id="star-54" name="rating-11" value="4">
+								<label for="star-54" title="Оценка «4»"></label>
+								<input type="radio" id="star-53" name="rating-11" value="3">
+								<label for="star-53" title="Оценка «3»"></label>
+								<input type="radio" id="star-52" name="rating-11" value="2">
+								<label for="star-52" title="Оценка «2»"></label>
+								<input type="radio" id="star-51" name="rating-11" value="1">
+								<label for="star-51" title="Оценка «1»"></label>
+							</div>
+						</div>
+						<div class="catalog__card-price-box">
+							<div class="catalog__card-price"> <span class="catalog__card-price-span">21 200.00</span> тг.</div>
+							<div class="catalog__card-add">
+								<span class="catalog__card-add-link"><svg class="catalog__card-add-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g>	<g>		<path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107			c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120			c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span>
+							</div>
+						</div>
+					</div>
+					<!-- /.catalog__card -->
+					<div class="button catalog__card">
+						<div class="catalog__card-image-box">
+							<img src="../img/catalog/right/catalog-image-3.png" alt="image" class="populal__card-image">
+						</div>
+						<div class="catalog__card-description">
+							<div class="catalog__card-name">Обувь Т 452</div>
+							<div class="catalog__card-label">Женская Обувь</div>
+							<div class="rating-area catalog__card-rating">
+								<input type="radio" id="star-60" name="rating-12" value="5">
+								<label for="star-60" title="Оценка «5»"></label>
+								<input type="radio" id="star-59" name="rating-12" value="4">
+								<label for="star-59" title="Оценка «4»"></label>
+								<input type="radio" id="star-58" name="rating-12" value="3">
+								<label for="star-58" title="Оценка «3»"></label>
+								<input type="radio" id="star-57" name="rating-12" value="2">
+								<label for="star-57" title="Оценка «2»"></label>
+								<input type="radio" id="star-56" name="rating-12" value="1">
+								<label for="star-56" title="Оценка «1»"></label>
+							</div>
+						</div>
+						<div class="catalog__card-price-box">
+							<div class="catalog__card-price"> <span class="catalog__card-price-span">12 555.00</span> тг.</div>
+							<div class="catalog__card-add">
+								<span class="catalog__card-add-link"><svg class="catalog__card-add-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g>	<g>		<path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107			c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120			c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span>
+							</div>
+						</div>
+					</div>
+					<!-- /.catalog__card -->
+					<div class="button catalog__card">
+						<div class="catalog__card-image-box">
+							<img src="../img/catalog/right/catalog-image-4.png" alt="image" class="populal__card-image">
+						</div>
+						<div class="catalog__card-description">
+							<div class="catalog__card-name">Рюкзак PUMA</div>
+							<div class="catalog__card-label">Рюкзаки</div>
+							<div class="rating-area catalog__card-rating">
+								<input type="radio" id="star-65" name="rating-13" value="5">
+								<label for="star-65" title="Оценка «5»"></label>
+								<input type="radio" id="star-64" name="rating-13" value="4">
+								<label for="star-64" title="Оценка «4»"></label>
+								<input type="radio" id="star-63" name="rating-13" value="3">
+								<label for="star-63" title="Оценка «3»"></label>
+								<input type="radio" id="star-62" name="rating-13" value="2">
+								<label for="star-62" title="Оценка «2»"></label>
+								<input type="radio" id="star-61" name="rating-13" value="1">
+								<label for="star-61" title="Оценка «1»"></label>
+							</div>
+						</div>
+						<div class="catalog__card-price-box">
+							<div class="catalog__card-price"> <span class="catalog__card-price-span">5 000.00</span> тг.</div>
+							<div class="catalog__card-add">
+								<span class="catalog__card-add-link"><svg class="catalog__card-add-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g>	<g>		<path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107			c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120			c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span>
+							</div>
+						</div>
+					</div>
+					<!-- /.catalog__card -->
+					<div class="button catalog__card">
+						<div class="catalog__card-image-box">
+							<img src="../img/catalog/right/catalog-image-5.png" alt="image" class="populal__card-image">
+						</div>
+						<div class="catalog__card-description">
+							<div class="catalog__card-name">Туфли детские 555</div>
+							<div class="catalog__card-label">Детская обувь</div>
+							<div class="rating-area catalog__card-rating">
+								<input type="radio" id="star-70" name="rating-14" value="5">
+								<label for="star-70" title="Оценка «5»"></label>
+								<input type="radio" id="star-69" name="rating-14" value="4">
+								<label for="star-69" title="Оценка «4»"></label>
+								<input type="radio" id="star-68" name="rating-14" value="3">
+								<label for="star-68" title="Оценка «3»"></label>
+								<input type="radio" id="star-67" name="rating-14" value="2">
+								<label for="star-67" title="Оценка «2»"></label>
+								<input type="radio" id="star-66" name="rating-14" value="1">
+								<label for="star-66" title="Оценка «1»"></label>
+							</div>
+						</div>
+						<div class="catalog__card-price-box">
+							<div class="catalog__card-price"> <span class="catalog__card-price-span">8 900.00</span> тг.</div>
+							<div class="catalog__card-add">
+								<span class="catalog__card-add-link"><svg class="catalog__card-add-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g>	<g>		<path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107			c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120			c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span>
+							</div>
+						</div>
+						<p class="catalog__card-price-old">13 750.00 тг.</p>
+						<p class="catalog__card-discount">40%</p>
+					</div>
+					<!-- /.catalog__card -->
+					<div class="button catalog__card">
+						<div class="catalog__card-image-box">
+							<img src="../img/catalog/right/catalog-image-6.png" alt="image" class="populal__card-image">
+						</div>
+						<div class="catalog__card-description">
+							<div class="catalog__card-name">Сарафан в клетку №2</div>
+							<div class="catalog__card-label">Детская одежда</div>
+							<div class="rating-area catalog__card-rating">
+								<input type="radio" id="star-75" name="rating-15" value="5">
+								<label for="star-75" title="Оценка «5»"></label>
+								<input type="radio" id="star-74" name="rating-15" value="4">
+								<label for="star-74" title="Оценка «4»"></label>
+								<input type="radio" id="star-73" name="rating-15" value="3">
+								<label for="star-73" title="Оценка «3»"></label>
+								<input type="radio" id="star-72" name="rating-15" value="2">
+								<label for="star-72" title="Оценка «2»"></label>
+								<input type="radio" id="star-71" name="rating-15" value="1">
+								<label for="star-71" title="Оценка «1»"></label>
+							</div>
+						</div>
+						<div class="catalog__card-price-box">
+							<div class="catalog__card-price"> <span class="catalog__card-price-span">8 000.00</span> тг.</div>
+							<div class="catalog__card-add">
+								<span class="catalog__card-add-link"><svg class="catalog__card-add-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g>	<g>		<path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107			c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120			c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span>
+							</div>
+						</div>
+						<p class="catalog__card-price-old">9 750.00 тг.</p>
+						<p class="catalog__card-discount">25%</p>
+					</div>
+					<!-- /.catalog__card -->
+				</div>
+				<!-- /.catalog__right -->
+			</div>
+			<!-- /.container catalog__container -->
+			<div class="container catalog__container">
+				<div class="catalog__right-pages">
+					<div class="catalog__right-pages-texts">
+						<p class="catalog__right-pages-text catalog__right-pages-text--1">Найдено товаров:&nbsp;</p>
+						<p class="catalog__right-pages-text catalog__right-pages-text--2">510</p>
+						<p class="catalog__right-pages-text catalog__right-pages-text--3">. Показано с&nbsp;</p>
+						<p class="catalog__right-pages-text catalog__right-pages-text--4">1</p>
+						<p class="catalog__right-pages-text catalog__right-pages-text--5">&nbsp;по&nbsp; </p>
+						<p class="catalog__right-pages-text catalog__right-pages-text--6">15</p>
+					</div>
+					<!-- /.catalog__right-pages-text -->
+					<div class="catalog__right-pages-buttons">
+						<a href="#" class="catalog__right-pages-button catalog__right-pages-button--1">1</a>
+						<a href="#" class="catalog__right-pages-button catalog__right-pages-button--2">2</a>
+						<a href="#" class="catalog__right-pages-button catalog__right-pages-button--3">3</a>
+						<a href="#" class="catalog__right-pages-button catalog__right-pages-button--4">4</a>
+						<a href="#" class="catalog__right-pages-button catalog__right-pages-button--5">...</a>
+						<a href="#" class="catalog__right-pages-button catalog__right-pages-button--6">30</a>
+						<a href="#" class="catalog__right-pages-button catalog__right-pages-button--7"><svg class="catalog__right-pages-button--7-arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 492.004 492.004" style="enable-background:new 0 0 492.004 492.004;" xml:space="preserve"><g>	<g>		<path d="M484.14,226.886L306.46,49.202c-5.072-5.072-11.832-7.856-19.04-7.856c-7.216,0-13.972,2.788-19.044,7.856l-16.132,16.136			c-5.068,5.064-7.86,11.828-7.86,19.04c0,7.208,2.792,14.2,7.86,19.264L355.9,207.526H26.58C11.732,207.526,0,219.15,0,234.002			v22.812c0,14.852,11.732,27.648,26.58,27.648h330.496L252.248,388.926c-5.068,5.072-7.86,11.652-7.86,18.864			c0,7.204,2.792,13.88,7.86,18.948l16.132,16.084c5.072,5.072,11.828,7.836,19.044,7.836c7.208,0,13.968-2.8,19.04-7.872			l177.68-177.68c5.084-5.088,7.88-11.88,7.86-19.1C492.02,238.762,489.228,231.966,484.14,226.886z"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></a>
+					</div>
+					<!-- /.catalog__right-pages-button -->
+				</div>
+				<!-- /.catalog__right-pages -->
+			</div>
+			<!-- /.container catalog__container -->
+		</section>
+		<!-- /.catalog -->
+		<section class="services" id="services">
+			<div class="container services__container">
+				<div class="services__header">
+					<h2 class="services__header-text">Сервисы платформы</h2>
+				</div>
+				<div class="services__row">
+					<div class="swiper-container swiper-container-4 swiper-no-swiping">
+						<div class="swiper-wrapper swiper-wrapper-3">
+							<div class="swiper-slide">
+								<a href="#services" class="services__card">
+									<div class="services__card-image-box">
+										<img src="../img/main/services/services-image-1.png" alt="image" class="services__card-image">
+									</div>
+									<p class="services__card-name">Учись с умом с E-Библиотекой</p>
+									<p class="services__card-label">http://elib.kdt.kz</p>
+								</a>
+								<!-- /.services__card -->
+							</div>
+							<div class="swiper-slide">
+								<a href="#services" class="services__card">
+									<div class="services__card-image-box">
+										<img src="../img/main/services/services-image-2.png" alt="image" class="services__card-image">
+									</div>
+									<p class="services__card-name">Ешь не думая с E-Столовой</p>
+									<p class="services__card-label">http://estol.kdt.kz</p>
+								</a>
+								<!-- /.services__card -->
+							</div>
+							<div class="swiper-slide">
+								<a href="#services" class="services__card">
+									<div class="services__card-image-box">
+										<img src="../img/main/services/services-image-3.png" alt="image" class="services__card-image">
+									</div>
+									<p class="services__card-name">Безопасность с BMC СМБР!</p>
+									<p class="services__card-label">http://security.kdt.kz</p>
+								</a>
+								<!-- /.services__card -->
+							</div>
+							<div class="swiper-slide">
+								<a href="#services" class="services__card">
+									<div class="services__card-image-box">
+										<img src="../img/main/services/services-image-4.png" alt="image" class="services__card-image">
+									</div>
+									<p class="services__card-name">Проверь свои знания с Exams</p>
+									<p class="services__card-label">http://exams.kdt.kz</p>
+								</a>
+								<!-- /.services__card -->
+							</div>
+							<div class="swiper-slide">
+								<a href="#services" class="services__card">
+									<div class="services__card-image-box">
+										<img src="../img/main/services/services-image-1.png" alt="image" class="services__card-image">
+									</div>
+									<p class="services__card-name">Учись с умом с E-Библиотекой</p>
+									<p class="services__card-label">http://elib.kdt.kz</p>
+								</a>
+								<!-- /.services__card -->
+							</div>
+							<div class="swiper-slide">
+								<a href="#services" class="services__card">
+									<div class="services__card-image-box">
+										<img src="../img/main/services/services-image-2.png" alt="image" class="services__card-image">
+									</div>
+									<p class="services__card-name">Ешь не думая с E-Столовой</p>
+									<p class="services__card-label">http://estol.kdt.kz</p>
+								</a>
+								<!-- /.services__card -->
+							</div>
+							<div class="swiper-slide">
+								<a href="#services" class="services__card">
+									<div class="services__card-image-box">
+										<img src="../img/main/services/services-image-3.png" alt="image" class="services__card-image">
+									</div>
+									<p class="services__card-name">Безопасность с BMC СМБР!</p>
+									<p class="services__card-label">http://security.kdt.kz</p>
+								</a>
+								<!-- /.services__card -->
+							</div>
+							<div class="swiper-slide">
+								<a href="#services" class="services__card">
+									<div class="services__card-image-box">
+										<img src="../img/main/services/services-image-4.png" alt="image" class="services__card-image">
+									</div>
+									<p class="services__card-name">Проверь свои знания с Exams</p>
+									<p class="services__card-label">http://exams.kdt.kz</p>
+								</a>
+								<!-- /.services__card -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /.services__row -->
+				<div class="services__pagination">
+					<div class="services__pagination-left">
+						<svg class="services__pagination-left-arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve"><g>	<g>		<polygon points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093 		"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+					</div>
+					<div class="services__pagination-right">
+						<svg class="services__pagination-right-arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve"><g>	<g>		<polygon points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093 		"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+					</div>
+				</div>
+			</div>
+			<!-- /.container services__container -->
+		</section>
+		<!-- /.services -->
+	</main>
+	<footer class="footer">
+		<div class="container footer__container">
+			<div class="footer__left">
+				<div class="footer__column--1">
+					<p class="footer__column--1-text--1">Товаропроводящие сети на <span class="footer__column--1-text--1-span">BMC Sales</span></p>
+					<p class="footer__column--1-text--2">Наша платформа предоставляет услуги по созданию онлайн-магазинов для продажи вашей продукции</p>
+					<div class="footer__column--1-social">
+						<a href="#" class="footer__column--1-link"><svg class="footer__column--1-link-icon" height="681pt" viewBox="-21 -81 681.33464 681" width="681pt" xmlns="http://www.w3.org/2000/svg"><path d="m200.964844 515.292969c241.050781 0 372.871094-199.703125 372.871094-372.871094 0-5.671875-.117188-11.320313-.371094-16.9375 25.585937-18.5 47.824218-41.585937 65.371094-67.863281-23.480469 10.441406-48.753907 17.460937-75.257813 20.636718 27.054687-16.230468 47.828125-41.894531 57.625-72.488281-25.320313 15.011719-53.363281 25.917969-83.214844 31.808594-23.914062-25.472656-57.964843-41.402344-95.664062-41.402344-72.367188 0-131.058594 58.6875-131.058594 131.03125 0 10.289063 1.152344 20.289063 3.398437 29.882813-108.917968-5.480469-205.503906-57.625-270.132812-136.921875-11.25 19.363281-17.742188 41.863281-17.742188 65.871093 0 45.460938 23.136719 85.605469 58.316407 109.082032-21.5-.660156-41.695313-6.5625-59.351563-16.386719-.019531.550781-.019531 1.085937-.019531 1.671875 0 63.46875 45.171875 116.460938 105.144531 128.46875-11.015625 2.996094-22.605468 4.609375-34.558594 4.609375-8.429687 0-16.648437-.828125-24.632812-2.363281 16.683594 52.070312 65.066406 89.960937 122.425781 91.023437-44.855469 35.15625-101.359375 56.097657-162.769531 56.097657-10.5625 0-21.003906-.605469-31.2617188-1.816407 57.9999998 37.175781 126.8710938 58.871094 200.8867188 58.871094"/></svg></a>
+						<a href="#" class="footer__column--1-link"><svg class="footer__column--1-link-icon" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg></a>
+						<a href="#" class="footer__column--1-link"><svg class="footer__column--1-link-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 511.962 511.962" style="enable-background:new 0 0 511.962 511.962;" xml:space="preserve"><g>	<g>		<path d="M507.399,370.471c-1.376-2.304-9.888-20.8-50.848-58.816c-42.88-39.808-37.12-33.344,14.528-102.176			c31.456-41.92,44.032-67.52,40.096-78.464c-3.744-10.432-26.88-7.68-26.88-7.68l-76.928,0.448c0,0-5.696-0.768-9.952,1.76			c-4.128,2.496-6.784,8.256-6.784,8.256s-12.192,32.448-28.448,60.032c-34.272,58.208-48,61.28-53.6,57.664			c-13.024-8.416-9.76-33.856-9.76-51.904c0-56.416,8.544-79.936-16.672-86.016c-8.384-2.016-14.528-3.36-35.936-3.584			c-27.456-0.288-50.72,0.096-63.872,6.528c-8.768,4.288-15.52,13.856-11.392,14.4c5.088,0.672,16.608,3.104,22.72,11.424			c7.904,10.72,7.616,34.848,7.616,34.848s4.544,66.4-10.592,74.656c-10.4,5.664-24.64-5.888-55.2-58.72			c-15.648-27.04-27.488-56.96-27.488-56.96s-2.272-5.568-6.336-8.544c-4.928-3.616-11.84-4.768-11.84-4.768l-73.152,0.448			c0,0-10.976,0.32-15.008,5.088c-3.584,4.256-0.288,13.024-0.288,13.024s57.28,133.984,122.112,201.536			c59.488,61.92,127.008,57.856,127.008,57.856h30.592c0,0,9.248-1.024,13.952-6.112c4.352-4.672,4.192-13.44,4.192-13.44			s-0.608-41.056,18.464-47.104c18.784-5.952,42.912,39.68,68.48,57.248c19.328,13.28,34.016,10.368,34.016,10.368l68.384-0.96			C488.583,400.807,524.359,398.599,507.399,370.471z"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></a>
+						<a href="#" class="footer__column--1-link"><svg class="footer__column--1-link-icon" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m23.469 5.929.03.196c-.29-1.029-1.073-1.823-2.068-2.112l-.021-.005c-1.871-.508-9.4-.508-9.4-.508s-7.51-.01-9.4.508c-1.014.294-1.798 1.088-2.083 2.096l-.005.021c-.699 3.651-.704 8.038.031 11.947l-.031-.198c.29 1.029 1.073 1.823 2.068 2.112l.021.005c1.869.509 9.4.509 9.4.509s7.509 0 9.4-.509c1.015-.294 1.799-1.088 2.084-2.096l.005-.021c.318-1.698.5-3.652.5-5.648 0-.073 0-.147-.001-.221.001-.068.001-.149.001-.23 0-1.997-.182-3.951-.531-5.846zm-13.861 9.722v-7.293l6.266 3.652z"/></svg></a>
+					</div>
+				</div>
+				<!-- /.footer__column-1 -->
+				<div class="footer__column--2">
+					<p class="footer__column--2-text">Мобильное приложение</p>
+					<a class="footer__column--2-appstore">
+						<img src="../img/main/footer/apple.png" alt="image" class="footer__column--2-apple">
+						<p class="footer__column--2-apple-text">Download on the <span class="footer__column--2-apple-span">App Store</span></p>
+					</a>
+					<a class="footer__column--2-playmarket">
+						<img src="../img/main/footer/play-market.png" alt="image" class="footer__column--2-play">
+						<p class="footer__column--2-play-text">Download from <span class="footer__column--2-play-span">Google Play</span></p>
+					</a>
+					<a href="#" class="footer__column--2-link">Ваш профиль<svg class="footer__column--2-link-arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve"><g>	<g>		<polygon points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093 		"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></a>
+				</div>
+				<!-- /.footer__column-2 -->
+				<div class="footer__column--3">
+					<ul class="footer__column--3-list">
+						<li class="footer__column--3-li"><a class="footer__column--3-li-link" href="#">о платформе</a></li>
+						<li class="footer__column--3-li"><a class="footer__column--3-li-link" href="#">участники</a></li>
+						<li class="footer__column--3-li"><a class="footer__column--3-li-link" href="#">партнеры</a></li>
+						<li class="footer__column--3-li"><a class="footer__column--3-li-link" href="#">поддержка и обслуживание</a></li>
+						<li class="footer__column--3-li"><a class="footer__column--3-li-link" href="#">конфеденциальность</a></li>
+						<li class="footer__column--3-li"><a class="footer__column--3-li-link" href="#">новости</a></li>
+						<li class="footer__column--3-li"><a class="footer__column--3-li-link" href="#">доставка</a></li>
+						<li class="footer__column--3-li"><a class="footer__column--3-li-link" href="#">оплата и возврат</a></li>
+					</ul>
+					<!-- /.footer__column-3-list -->
+				</div>
+				<!-- /.footer__column-3 -->
+			</div>
+			<!-- /.footer__left -->
+			<div class="footer__right">
+				<a href="index.html" class="footer__logo">
+					<img src="../img/main/footer/logo.png" alt="logo" class="footer__logo-image">
+					<div class="footer__logo-text">
+						<p class="footer__logo-text--1">bmc sales</p>
+						<p class="footer__logo-text--2">партнерская сеть продаж</p>
+					</div>
+				</a>
+				<a href="tel:+79997683299" class="footer__right-phone">+7 (777) 788 89 99</a>
+				<a href="mailto:exsample@mail.com" class="footer__right-label">bmc-sales@gmail.com</a>
+				<img src="../img/main/footer/payments.png" alt="image" class="footer__right-payment">
+			</div>
+			<!-- /.footer_right -->
+		</div>
+		<!-- /.container footer__container -->
+		<div class="footer__down">
+			<div class="container footer__down-container">
+				<p class="footer__copyright">Copyright © BenchMark Consulting 2018-2019. Все права защищены</p>
+				<a href="#" class="footer__down-error">Сообщить об ошибке</a>
+			</div>
+			<!-- /.container footer__container -->
+		</div>
+		<!-- /.footer__down -->
+	</footer>
+	<!-- /.footer -->
+	<div class="modal" id="modal--id">
+		<div class="modal__close-block"></div>
+		<div class="modal__dialog">
+			<div class="modal__dialog-box">
+				<button class="modal__close"><svg class="modal__close-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve"><g>	<g>		<path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872			c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872			c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052			L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116			c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952			c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116			c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></button>
+				<h3 class="modal__title">Регистрация</h3>
+				<form action="modal-send.php" method="POST" class="form modal__form">
+					<div class="modal__input-group">
+						<input type="text" name="userName" class="modal__input" id="user-name-3" placeholder="Введите Ваше имя">
+					</div>
+					<div class="modal__input-group">
+						<input type="tel" name="userPhone" class="modal__input" id="user-phone-3" placeholder="Ваш номер телефона">
+					</div>
+					<div class="modal__input-group modal__input-group--last">
+						<input type="email" name="userEmail" class="modal__input" id="user-email-3" placeholder="Ваш Email">
+					</div>
+					<div class="policy modal__policy">
+						<input class="policy__checkbox policy__label" type="checkbox" name="policyCheckbox" id="policy-checkbox-3">
+						<label for="policy-checkbox-3" class="policy__label" >Политика &nbsp;<a href="#" class="policy__label-span"> конфиденциальности</a></label>
+					</div>
+					<!-- /.policy -->
+					<button class="modal__button">Зарегистрироваться</button>
+				</form>
+			</div>
+			<div class="modal__dialog-success">
+				<button class="modal__close"><svg class="modal__close-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve"><g>	<g>		<path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872			c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872			c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052			L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116			c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952			c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116			c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></button>
+				<div class="modal__dialog-check">
+					<svg class="modal__dialog-check-icon" width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.84578 0.600586L3.13424 6.31212L0.538086 3.71597" stroke="white" stroke-width="1.5"/></svg>
+				</div>
+				<div class="modal__dialog-success-text">Спасибо! Наш менеджер скоро перезвонит Вам!</div>
+			</div>
+		</div>
+		<!-- /.modal__dialog -->
+	</div>
+	<!-- /.modal -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+	<script src="../js/catalog/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+.top-header
+	display: flex
+	align-items: center
+	position: fixed
+	left: 0
+	right: 0
+	top: 0
+	background-color: $bgsecondary
+	height: 45px
+	z-index: 10000
+	&__container
+		position: relative
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__left
+		width: 768px
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__right
+		display: flex
+		white-space: nowrap
+		justify-content: center
+		align-items: center
+		width: 120px
+		height: 30px
+		text-decoration: none
+		border-radius: 6%
+		transition: $transition
+		border: 1px solid darken($bgsecondary, 30%)
+		&:hover
+			// background-color: none
+			border: 1px solid darken($bgsecondary, 60%)
+	&__logo
+		display: block
+		width: 32px
+		height: 32px
+		fill: $secondary
+		&-link
+			margin-right: 4%
+	&__navbar
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: 100%
+		// margin: 0
+		// padding: 0
+	&__nav-item
+		position: relative
+		display: flex
+		align-items: center
+		white-space: nowrap
+	&__icon
+		fill: $secondary
+		width: 13px
+		height: 13px
+		margin-left: 7px
+		transition: $transition
+		&--last
+			width: 20px
+			height: 20px
+			margin-right: 7px
+			margin-left: 0
+		&:hover ~
+			.top-header__text
+				color: $dark !important
+		&:hover
+			fill: black
+	&__text
+		font-family: $dregular
+		font-size: 14px
+		color: $secondary
+		white-space: nowrap
+		transition: $transition
+		text-decoration: none
+		&:hover ~
+			.top-header__icon
+				fill: $dark
+		&:hover
+			color: $dark
+	&__lines
+		list-style: none
+		width: 1px
+		height: 17px
+		background-color: $secondary
+	&__burger
+		display: none
+		justify-content: center
+		align-items: center
+		position: absolute
+		right: 0
+		padding: 15px
+		padding-left: 15px
+		transition: $transition
+		&-button
+			position: absolute
+			height: 3px
+			width: 17px
+			right: 5px
+			background-color: $dark
+			transition: $transition
+			&::after, &::before
+				position: absolute
+				content: ''
+				height: 3px
+				width: 17px
+				background-color: $dark
+				right: 0
+				top: -6px
+				transition: $transition
+			&::before
+				top: 6px
+
+
+.navbar-width
+	visibility: visible !important
+	width: 200px !important
+	padding-left: 10px !important
+.navbar-transition
+	visibility: hidden
+.nav-item-opacity
+	opacity: 1 !important
+.burger-button-right
+	&::after
+		background-color: $bgsecondary !important
+		transform: rotate(45deg)
+		transform-origin: 0
+	&::before
+		background-color: $bgsecondary !important
+		transform: rotate(-45deg)
+		transform-origin: 0
+.burger-right
+	right: 160px !important
+	padding-right: 12px !important
+.lock-button-right
+	margin-right: 30px !important
+	// border: $secondary !important
+	// margin-top: 5px
+
+		

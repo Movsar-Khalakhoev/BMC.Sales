@@ -1,0 +1,99 @@
+.categories
+	&__container
+		position: relative
+	&__header
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 32%
+		border-right: 2px solid darken($bgsecondary, 20%)
+		border-left: 2px solid darken($bgsecondary, 20%)
+		margin: auto
+		text-align: center
+		height: 30px
+		margin-bottom: 39px
+		&::before
+			content: ''
+			position: absolute
+			height: 2px
+			width: 34%
+			background-color: $dark
+			left: 0
+			background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0)), to(darken($bgsecondary, 20%)))
+  	 	-webkit-background-clip: text
+  	  -webkit-text-fill-color: transparent
+		&::after
+			content: ''
+			position: absolute
+			height: 2px
+			width: 34%
+			background-color: $dark
+			right: 0
+			background: -webkit-gradient(linear, right top, left bottom, from(rgba(0, 0, 0, 0)), to(darken($bgsecondary, 20%)))
+  	 	-webkit-background-clip: text
+  	  -webkit-text-fill-color: transparent
+		&-text
+			font-family: $dlight
+			font-size: 36px
+			color: $dark
+	&__row
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-flow: wrap
+	&__other
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 104px
+		height: 45px
+		text-decoration: none
+		border: 2px solid $dark
+		color: $dark
+		margin: auto
+		margin-top: 40px
+		margin-bottom: 50px
+		font-family: $dmedium
+		font-size: 14px
+		transition: $transition
+		&-arrow
+			width: 10px
+			margin-left: 5px
+			margin-top: 3px
+			transition: $transition
+			&-active
+				fill: $white
+		&:hover
+			color: $white
+			background-color: $dark
+	&__category
+		&--1, &--2, &--3, &--4
+			text-decoration: none
+			flex-basis: 23.5%
+			height: 60px
+			display: flex
+			align-items: center
+			justify-content: flex-start
+			background-color: $bgsecondary
+			border-radius: 5px
+			transition: $transition
+			&:hover
+				background-color: $primary
+		&-img
+			&--1, &--2, &--3, &--4
+				width: 20px
+				margin-left: 19px
+				fill: $dark
+				transition: $transition
+			&-active
+				fill: $white
+		&-text
+			&--1, &--2, &--3, &--4
+				margin-left: 66px
+				font-family: $dregular
+				white-space: nowrap
+				font-size: 16px
+				color: $dark
+				transition: $transition
+			&-active
+				color: $white

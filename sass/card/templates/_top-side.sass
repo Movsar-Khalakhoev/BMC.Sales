@@ -1,0 +1,431 @@
+.top-side
+	&__container
+		display: flex
+		align-items: space-between
+		justify-content: space-between
+	&__card-rating
+		display: flex
+	&__left
+		width: 550px
+		height: 667px
+		&-swiper-slide
+			&--1
+				background: no-repeat center
+				background-size: 50%
+			&--2
+				padding: 10px
+				background: no-repeat center
+				background-size: 50%
+				transition: $transition
+				border: 1px solid $secondary
+				&:hover
+					background-color: darken($bgsecondary, 20%)
+	&__right
+		max-width: 783px
+		&-header
+			display: flex
+			justify-content: space-between
+			align-items: flex-end
+			padding-bottom: 18px
+			&-left
+				font-family: $dbold
+				font-size: 24px
+				color: $dark
+			&-right
+				display: flex
+				&-text
+					font-family: $dregular
+					font-size: 14px
+					color: $secondary
+					margin-right: 5px
+					&-span
+						font-family: $dbold
+			&-icon
+				width: 15px
+				height: 15px
+				margin-left: 5px
+			&-right
+				display: flex
+				align-items: center
+				justify-content: space-between
+		&-price
+			margin-bottom: 17px
+			&-box
+				display: flex
+				justify-content: space-between
+				align-items: center
+				height: 157px
+				border-top: 1px dashed $secondary
+			&--1
+				font-family: $dbold
+				font-size: 24px
+				color: $dark
+			&-span
+				font-size: 50px
+				letter-spacing: -0.7px
+				margin-right: 7px
+			&-col
+				font-family: $dregular
+				color: $secondary
+				font-size: 16px
+				margin-top: 10px
+				margin-left: 3px
+				&-span
+					font-family: $dbold
+					color: $dark
+			&-qr
+				margin-bottom: 7px
+		&-colors
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			height: 91px
+			border-top: 1px dashed $secondary
+			&-text
+				font-size: 16px
+				font-family: $dregular
+				color: $dark
+				margin-right: 32px
+				margin-bottom: 7px
+			&-btn
+				display: flex
+				justify-content: space-between
+				align-items: center
+				height: 30px
+				border: 1px solid $secondary
+				margin-bottom: 6px
+				cursor: pointer
+				&-box
+					display: flex
+					justify-content: space-between
+					flex-flow: wrap
+					width: 506px
+					height: 32px
+					margin-right: 10px
+				&-active
+					border: 1px solid $primary
+				&-text
+					font-family: $dregular
+					font-size: 14px
+					color: $dark
+					margin-right: 21px
+				&--1
+					width: 125px
+					&-color
+						height: 26px
+						width: 26px
+						background-color: #86c255
+				&--2
+					width: 120px
+					&-color
+						height: 26px
+						width: 26px
+						background-color: #e9eb5b
+				&--3
+					width: 124px
+					&-color
+						height: 26px
+						width: 26px
+						background-color: #e84b4b
+				&--4
+					width: 109px
+					&-color
+						height: 26px
+						width: 26px
+						background-color: #4b91e8
+		&-delivery
+			padding-top: 29px
+			border-top: 1px dashed $secondary
+			height: 239px
+			&-delivery, &-pickup
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 20px
+				height: 20px
+				border-radius: 50%
+				border: 1px solid #000
+				&::after
+					content: ''
+					border-radius: 50%
+					width: 10px
+					height: 10px
+				&-active::after
+					background-color: $dark
+			&-way
+				&-header
+					font-family: $dregular
+					font-size: 16px
+					color: $dark
+					margin-top: -5px
+				&-other
+					display: flex
+					justify-content: flex-start
+					align-items: flex-start
+					height: 41px
+					margin-top: 22px
+					// border: 1px solid red
+					&--1
+						display: flex
+						justify-content: flex-start
+						align-items: center
+						padding-right: 30px
+						padding-left: 5px
+						padding-bottom: 16px
+						padding-top: 5px
+						border-right: 1px solid $secondary
+						cursor: pointer
+						&-active
+							border-bottom: 1px solid $white
+							border-right: 1px solid $secondary
+					&--2
+						display: flex
+						justify-content: flex-start
+						align-items: center
+						padding-left: 30px
+						padding-right: 30px
+						padding-top: 5px
+						// border: 1px solid $secondary
+						padding-bottom: 16px
+						cursor: pointer
+						&-active
+							border-bottom: 1px solid $white
+							border-right: 1px solid $secondary
+			&-point
+				height: 126px
+				&-pickup
+					padding-left: 31px
+					padding-bottom: 30px
+					display: none
+					&-active
+						display: block !important
+						border-top: 1px solid $secondary
+					&-header
+						font-family: $dregular
+						font-size: 16px
+						color: $dark
+						padding-top: 25px
+						padding-bottom: 19px
+					&-box
+						display: flex
+						justify-content: space-between
+						flex-flow: wrap
+						width: 692px
+					&--1
+						display: flex
+						align-items: center
+						justify-content: flex-start
+						border: 1px solid $secondary
+						height: 30px
+						width: 337px
+						&-radio
+							width: 20px
+							height: 20px
+							margin-left: 6px
+							cursor: pointer
+						&-text
+							font-family: $dregular
+							color: $dark
+							font-size: 14px
+							margin-left: 8px
+					&--2
+						display: flex
+						align-items: center
+						justify-content: flex-start
+						border: 1px solid $secondary
+						height: 30px
+						width: 345px
+						&-radio
+							width: 20px
+							height: 20px
+							margin-left: 6px
+							cursor: pointer
+						&-text
+							font-family: $dregular
+							color: $dark
+							font-size: 14px
+							margin-left: 8px
+				&-delivery
+					padding-left: 31px
+					display: none
+					padding-bottom: 20px
+					&-active
+						display: block !important
+						border-top: 1px solid $secondary
+					&-header
+						font-family: $dregular
+						font-size: 18px
+						color: $dark
+						padding-top: 25px
+						padding-bottom: 19px
+					&-input
+						width: 80%
+						height: 40px
+						font-size: 18px
+						font-family: $dregular
+						padding-left: 10px
+						color: $dark
+						&::placeholder
+							font-size: 16px
+							font-family: $dregular
+							padding-left: 10px
+						&-box
+							display: flex
+							justify-content: flex-start
+					&-button
+						display: flex
+						justify-content: center
+						align-items: center
+						text-decoration: none
+						text-transform: uppercase
+						font-size: 18px
+						color: $white
+						font-family: $dmedium
+						height: 40px
+						width: 50px
+						margin-left: 10px
+						background-color: $primary
+
+			&-pickup
+				width: 20px
+				height: 20px
+				&-text
+					font-family: $dregular
+					font-size: 16px
+					color: $dark
+					margin-left: 11px
+			&-delivery
+				width: 20px
+				height: 20px
+				&-text
+					font-family: $dregular
+					font-size: 16px
+					color: $dark
+					margin-left: 11px
+		&-buttons
+			display: flex
+			justify-content: space-between
+			align-items: center
+			border-top: 1px dashed $secondary
+			padding: 30px 0 
+		&-button
+			&-add
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 250px
+				height: 52px
+				background-color: $primary
+				text-decoration: none
+				color: $white
+				margin-left: 5px
+				font-family: $dregular
+				font-size: 16px
+				transition: $transition
+				&-icon
+					width: 18px
+					height: 18px
+					fill: $white
+					margin-right: 4px
+				&:hover
+					background-color: $dark
+			&-chosen
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 195px
+				height: 52px
+				margin-left: 20px
+				border: 2px solid $dark
+				font-family: $dregular
+				font-size: 16px
+				color: $dark
+				text-decoration: none
+				transition: $transition
+				&-icon
+					width: 16px
+					height: 16px
+					fill: $dark
+					margin-right: 6px
+				&:hover
+					background-color: $primary
+			&-wholesale
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 241px
+				height: 52px
+				margin-left: 77px
+				border: 2px solid $dark
+				font-family: $dregular
+				font-size: 16px
+				color: $dark
+				text-decoration: none
+				transition: $transition
+				&:hover
+					background-color: $primary
+		&-other	
+			display: flex
+			justify-content: space-between
+			align-items: center
+			padding-top: 19px
+			padding-bottom: 30px
+			border-top: 1px dashed $secondary
+			&-left
+				display: flex
+				justify-content: space-between
+				align-items: center
+				&-basket
+					font-family: $dregular
+					font-size: 14px
+					color: $dark
+					&-span
+						font-family: $dbold
+						font-size: 15px
+				&-chosen
+					margin-left: 30px
+					font-family: $dregular
+					font-size: 14px
+					color: $dark
+					&-span
+						font-family: $dbold
+						font-size: 15px
+			&-social
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				&-text
+					font-family: $dregular
+					color: $dark
+					font-size: 14px
+					margin-right: 6px
+					margin-left: -10px
+				&-link
+					display: flex
+					justify-content: center
+					align-items: center
+					padding: 5px
+					border-radius: 50%
+					border: 1px solid #ffffff
+					transition: $transition
+					margin-left: 7px
+					&--last
+						margin-right: -5px
+					&:hover
+						background-color: $bgsecondary
+						border: 1px solid $secondary
+					&-icon
+						width: 16px
+						height: 16px
+						fill: $secondary
+						transition: $transition
+						&:hover
+							fill: $dark
+
+					
+.gallery
+	&-top
+		max-height: 550px
+	&-thumbs
+		margin-top: 28px
+		max-height: 87px
